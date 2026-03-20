@@ -1,0 +1,357 @@
+{
+  "common": {
+    "learnMore": "Saber Más",
+    "getStarted": "Comenzar Ahora",
+    "contactUs": "Contáctenos",
+    "viewAll": "Ver Todos",
+    "readMore": "Leer Más",
+    "viewProject": "Ver Proyecto",
+    "requestQuote": "Solicitar Presupuesto",
+    "back": "Volver",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "new": "Nuevo",
+    "publish": "Publicar",
+    "unpublish": "Ocultar",
+    "published": "Publicado",
+    "draft": "Borrador",
+    "loading": "Cargando...",
+    "saving": "Guardando...",
+    "sending": "Enviando...",
+    "success": "Éxito",
+    "error": "Error",
+    "confirm": "Confirmar",
+    "home": "Inicio"
+  },
+
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menuTitle": "Menú de Navegación"
+  },
+
+  "hero": {
+    "badge": "Partner Tech Global",
+    "title": "Ascend",
+    "titleHighlight": "Tech Global",
+    "subtitle": "Estrategia, software y ejecución senior para empresas que necesitan modernizarse, convertir mejor y escalar con confianza.",
+    "description": "Ascend Tech Global transforma la ambición en una operación digital madura, con soluciones elegantes preparadas para rendimiento, confianza y crecimiento sostenible.",
+    "cta": "Solicitar Diagnóstico",
+    "ctaSecondary": "Ver Portafolio",
+    "trustLabel": "Entrega consultiva con visión de producto, negocio y escala.",
+    "trustDescription": "Posicionamiento más claro, mayor autoridad y una ruta de conversión más directa.",
+    "stat1Value": "50+",
+    "stat1Label": "Proyectos",
+    "stat2Value": "30+",
+    "stat2Label": "Clientes",
+    "stat3Value": "5+",
+    "stat3Label": "Años"
+  },
+
+  "about": {
+    "eyebrow": "Quiénes Somos",
+    "title": "SOBRE ASCEND",
+    "titleHighlight": "TECH GLOBAL",
+    "paragraph1": "Ascend Tech Global es una empresa líder en soluciones tecnológicas, dedicada a ayudar a negocios de todo el mundo a prosperar en un escenario digital en constante evolución. Con años de experiencia y un equipo de profesionales altamente calificados, entregamos soluciones innovadoras, confiables y escalables para impulsar su negocio.",
+    "paragraph2": "Nuestra misión es transformar la ambición en logros — combinando experiencia técnica profunda con una mentalidad centrada en el cliente para generar resultados medibles, asociaciones duraderas y tecnología que crece con usted.",
+    "bullet1": "Soluciones tecnológicas innovadoras y preparadas para el futuro",
+    "bullet2": "Equipo experimentado de profesionales tecnológicos globales",
+    "bullet3": "Soporte completo: de la estrategia a la implementación",
+    "cta": "Conozca Nuestra Historia"
+  },
+
+  "services": {
+    "eyebrow": "Lo Que Hacemos",
+    "title": "NUESTROS",
+    "titleHighlight": "SERVICIOS",
+    "subtitle": "Impulsando el crecimiento y el éxito a través de la innovación y la tecnología.",
+    "learnMore": "Saber Más",
+    "fallback": {
+      "consulting": {
+        "title": "Consultoría",
+        "titleHighlight": "Tecnológica",
+        "description": "Orientación especializada para optimizar su negocio con las mejores soluciones tecnológicas del mercado."
+      },
+      "software": {
+        "title": "Desarrollo",
+        "titleHighlight": "de Software",
+        "description": "Aplicaciones y sistemas personalizados, construidos a medida para las necesidades de su negocio."
+      },
+      "cyber": {
+        "title": "Ciber",
+        "titleHighlight": "seguridad",
+        "description": "Proteja sus datos y sistemas con soluciones de seguridad robustas y preparadas para el futuro."
+      },
+      "cloud": {
+        "title": "Soluciones",
+        "titleHighlight": "en la Nube",
+        "description": "Servicios en la nube escalables y seguros para modernizar su operación y reducir costos."
+      }
+    }
+  },
+
+  "whyChooseUs": {
+    "eyebrow": "Nuestros Diferenciales",
+    "title": "POR QUÉ",
+    "titleHighlight": "ELEGIRNOS",
+    "subtitle": "Combinamos experiencia profunda, visión global e innovación constante para entregar soluciones que mueven su negocio hacia adelante.",
+    "learnMore": "Saber Más",
+    "card1": {
+      "title": "SOLUCIONES",
+      "titleHighlight": "INNOVADORAS",
+      "description": "Tecnología de punta personalizada para las necesidades reales de su negocio."
+    },
+    "card2": {
+      "title": "ALCANCE",
+      "titleHighlight": "GLOBAL",
+      "description": "Atendemos empresas en todo el mundo con soluciones personalizadas y compatibles con cada realidad."
+    },
+    "card3": {
+      "title": "EQUIPO",
+      "titleHighlight": "ESPECIALISTA",
+      "description": "Un equipo de profesionales tecnológicos experimentados y dedicados en quienes puede confiar."
+    }
+  },
+
+  "portfolio": {
+    "eyebrow": "Nuestro Trabajo",
+    "title": "NUESTRO",
+    "titleHighlight": "PORTAFOLIO",
+    "subtitle": "Proyectos que transforman negocios y crean experiencias digitales memorables. Cada solución se desarrolla con excelencia técnica y enfoque total en resultados.",
+    "viewProject": "Ver Proyecto",
+    "viewAll": "Ver todos los proyectos",
+    "notFound": "Ningún proyecto publicado aún.",
+    "featuredBadge": "Destacado",
+    "projectsFound": "{count} proyecto{plural} encontrado{plural}",
+    "cta": {
+      "eyebrow": "Su Proyecto es el Próximo",
+      "title": "¿LISTO PARA CREAR ALGO",
+      "titleHighlight": "INCREÍBLE?",
+      "description": "Hablemos sobre su proyecto. Nuestro equipo está listo para transformar su visión en una solución digital de alto impacto.",
+      "button": "Iniciar Proyecto"
+    },
+    "detail": {
+      "backLink": "Volver al Portafolio",
+      "featuredBadge": "Destacado",
+      "client": "Cliente",
+      "viewLive": "Ver proyecto en vivo",
+      "aboutProject": "Sobre el Proyecto",
+      "cta": {
+        "eyebrow": "¿Le gustó lo que vio?",
+        "title": "CREEMOS ALGO",
+        "titleHighlight": "JUNTOS?",
+        "description": "Contáctenos y vea cómo podemos transformar su idea en realidad.",
+        "button": "Hablar con el equipo"
+      }
+    }
+  },
+
+  "testimonials": {
+    "eyebrow": "Testimonios",
+    "title": "LO QUE DICEN",
+    "titleHighlight": "NUESTROS CLIENTES",
+    "subtitle": "La satisfacción de nuestros clientes es nuestro mayor logro. Vea lo que tienen que decir sobre los resultados que alcanzamos juntos.",
+    "trustBadge": "Calificación promedio de 5.0 basada en 30+ clientes satisfechos"
+  },
+
+  "blog": {
+    "eyebrow": "Conocimiento e Innovación",
+    "title": "BLOG &",
+    "titleHighlight": "INSIGHTS",
+    "subtitle": "Manténgase al tanto de las últimas tendencias en tecnología, estrategias de negocio y mejores prácticas en desarrollo de software.",
+    "readMore": "Leer más",
+    "viewAll": "Ver todos los artículos",
+    "notFound": "Ningún post publicado aún.",
+    "featuredBadge": "Destacado",
+    "backLink": "Todos los posts",
+    "allTags": "Todos",
+    "readArticle": "Leer artículo",
+    "read": "Leer",
+    "cta": {
+      "eyebrow": "Manténgase Informado",
+      "title": "¿QUIERE RECIBIR CONTENIDOS",
+      "titleHighlight": "EXCLUSIVOS?",
+      "description": "Contáctenos y nuestro equipo lo mantendrá actualizado sobre las últimas tendencias en tecnología.",
+      "button": "Hablar con un Especialista"
+    }
+  },
+
+  "contact": {
+    "eyebrow": "Contáctenos",
+    "title": "HABLE CON",
+    "titleHighlight": "NUESTRO EQUIPO",
+    "description": "Hablemos sobre cómo podemos ayudar a su negocio a crecer. Contáctenos hoy mismo para comenzar.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Su nombre completo",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "su@correo.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+55 (11) 9 0000-0000",
+      "type": "Tipo de contacto",
+      "typeContact": "Contacto General",
+      "typeBudget": "Solicitar Presupuesto",
+      "message": "Mensaje",
+      "messagePlaceholder": "Describa su proyecto o cómo podemos ayudarle...",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "successMessage": "¡Mensaje enviado con éxito! Nos pondremos en contacto en breve.",
+      "errorMessage": "Ocurrió un error. Por favor, inténtelo de nuevo o contáctenos por WhatsApp.",
+      "required": "obligatorio"
+    },
+    "info": {
+      "title": "Estamos listos para atenderle",
+      "description": "Nuestro equipo está disponible para responder sus preguntas, presentar soluciones e iniciar su viaje de transformación digital.",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp",
+      "whatsappLabel": "Hablar por WhatsApp",
+      "address": "Dirección",
+      "addressValue": "São Paulo, SP — Brasil",
+      "responseTime": "Tiempo promedio de respuesta: menos de 24h"
+    }
+  },
+
+  "faq": {
+    "eyebrow": "Preguntas Frecuentes",
+    "title": "PREGUNTAS",
+    "titleHighlight": "FRECUENTES",
+    "subtitle": "Respondemos las principales preguntas sobre nuestros servicios, procesos y tecnologías."
+  },
+
+  "footer": {
+    "tagline": "Elevamos negocios con tecnología de punta, innovación estratégica y soluciones digitales de alto rendimiento.",
+    "company": "Empresa",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "social": "Redes Sociales",
+    "copyright": "Todos los derechos reservados.",
+    "madeBy": "Desarrollado con",
+    "madeByHighlight": "por Ascend Tech Global",
+    "whatsappAria": "Hablemos por WhatsApp",
+    "links": {
+      "about": "Nosotros",
+      "services": "Servicios",
+      "portfolio": "Portafolio",
+      "blog": "Blog"
+    },
+    "serviceLinks": {
+      "consulting": "Consultoría Tecnológica",
+      "software": "Desarrollo de Software",
+      "cyber": "Ciberseguridad",
+      "cloud": "Soluciones en la Nube"
+    }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Acceda a su cuenta",
+      "subtitle": "Ingrese sus credenciales para continuar",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "su@correo.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "¿Olvidó su contraseña?",
+      "submit": "Iniciar Sesión",
+      "submitting": "Iniciando sesión...",
+      "backToSite": "← Volver al sitio",
+      "errors": {
+        "emailRequired": "El correo electrónico es obligatorio",
+        "emailInvalid": "Ingrese un correo electrónico válido",
+        "passwordRequired": "La contraseña es obligatoria",
+        "passwordMinLength": "La contraseña debe tener al menos 6 caracteres",
+        "invalidCredentials": "Correo electrónico o contraseña incorrectos. Inténtelo de nuevo.",
+        "unexpected": "Ocurrió un error inesperado. Inténtelo de nuevo."
+      }
+    },
+    "recovery": {
+      "title": "Recuperar contraseña",
+      "subtitle": "Ingrese su correo electrónico para recibir el enlace de recuperación",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "su@correo.com",
+      "submit": "Enviar enlace",
+      "submitting": "Enviando...",
+      "backToLogin": "Volver al inicio de sesión",
+      "successTitle": "¡Enlace enviado!",
+      "successDescription": "Revise su bandeja de entrada y haga clic en el enlace para restablecer su contraseña. El enlace expira en 1 hora.",
+      "errors": {
+        "emailRequired": "El correo electrónico es obligatorio",
+        "emailInvalid": "Ingrese un correo electrónico válido",
+        "unexpected": "Ocurrió un error inesperado. Inténtelo de nuevo."
+      }
+    },
+    "reset": {
+      "title": "Restablecer contraseña",
+      "subtitle": "Elija una nueva contraseña segura para recuperar el acceso a su cuenta.",
+      "password": "Nueva contraseña",
+      "confirmPassword": "Confirmar nueva contraseña",
+      "submit": "Actualizar contraseña",
+      "submitting": "Actualizando...",
+      "successTitle": "Contraseña actualizada",
+      "successDescription": "Su contraseña fue restablecida correctamente. Ahora puede iniciar sesión nuevamente.",
+      "backToLogin": "Volver al inicio de sesión",
+      "errors": {
+        "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+        "passwordMismatch": "Las contraseñas deben coincidir",
+        "unexpected": "No fue posible restablecer la contraseña. Solicite un nuevo enlace e inténtelo de nuevo."
+      }
+    }
+  },
+
+  "admin": {
+    "title": "Panel Administrativo",
+    "online": "Sistema en Línea",
+    "nav": {
+      "overview": "Resumen",
+      "leads": "Leads",
+      "projects": "Proyectos",
+      "blog": "Blog",
+      "services": "Servicios",
+      "testimonials": "Testimonios",
+      "faqs": "FAQs",
+      "settings": "Configuración"
+    },
+    "user": {
+      "admin": "Administrador",
+      "logout": "Salir"
+    },
+    "dashboard": {
+      "welcome": "¡Bienvenido de nuevo!",
+      "newLeads": "Tiene {count} nuevo(s) lead(s).",
+      "allGood": "Todo en orden.",
+      "totalLeads": "Total de Leads",
+      "publishedProjects": "Proyectos Publicados",
+      "blogPosts": "Posts en el Blog",
+      "publishedPosts": "Posts Publicados",
+      "recentLeads": "Leads Recientes",
+      "viewAll": "Ver todos",
+      "quickActions": "Acciones Rápidas",
+      "newProject": "Nuevo Proyecto",
+      "newPost": "Nuevo Post",
+      "viewLeads": "Ver Leads",
+      "projects": "Proyectos",
+      "noLeads": "Ningún lead aún.",
+      "noProjects": "Ningún proyecto aún.",
+      "columns": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "type": "Tipo",
+        "status": "Estado",
+        "date": "Fecha"
+      },
+      "leadType": {
+        "budget": "Presupuesto",
+        "contact": "Contacto"
+      }
+    }
+  }
+}
