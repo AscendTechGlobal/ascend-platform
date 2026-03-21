@@ -11,6 +11,7 @@ import {
   Shield,
   type LucideIcon,
 } from 'lucide-react'
+import { Link } from '@/i18n/navigation'
 import type { Service } from '@/types'
 import { useTranslations } from '@/lib/i18n'
 
@@ -175,10 +176,13 @@ export default function Services({ services }: { services?: Service[] }) {
 
               <p className="section-copy mt-4 flex-1 text-sm">{description}</p>
 
-              <button className="btn-cyan-outline mt-8 inline-flex w-fit rounded-2xl px-4 py-2.5 text-xs">
+              <Link
+                href="/servicos"
+                className="btn-cyan-outline mt-8 inline-flex w-fit rounded-2xl px-4 py-2.5 text-xs"
+              >
                 {t('learnMore')}
                 <ArrowRight className="h-3.5 w-3.5" />
-              </button>
+              </Link>
             </motion.article>
           ))}
         </motion.div>

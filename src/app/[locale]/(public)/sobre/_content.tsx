@@ -7,9 +7,6 @@ import {
   Target,
   Eye,
   Heart,
-  Linkedin,
-  Twitter,
-  Github,
   ArrowRight,
   ChevronRight,
 } from 'lucide-react'
@@ -29,71 +26,46 @@ const stagger: Variants = {
 const basePillars = [
   {
     icon: Target,
-    label: 'Missão',
-    title: 'Nossa Missão',
-    text: 'Elevar negócios ao próximo nível através de tecnologia inovadora, soluções digitais de alta performance e parcerias estratégicas que geram resultados mensuráveis e duradouros.',
+    label: 'Foco',
+    title: 'Resolver a operação real',
+    text: 'Nosso foco é resolver problemas reais de operação, atacando gargalos, retrabalho e ineficiências que travam o crescimento.',
     color: '#00d4ff',
     border: 'rgba(0,212,255,0.2)',
     bg: 'rgba(0,212,255,0.05)',
   },
   {
     icon: Eye,
-    label: 'Visão',
-    title: 'Nossa Visão',
-    text: 'Ser a referência global em consultoria e desenvolvimento tecnológico, reconhecida por transformar ambição em resultado e por colocar nossos clientes na vanguarda digital.',
+    label: 'Estrutura',
+    title: 'Tecnologia aplicada com critério',
+    text: 'Cada solução é pensada para reduzir esforço manual, aumentar produtividade, organizar processos e permitir crescimento com estrutura.',
     color: '#f59e0b',
     border: 'rgba(245,158,11,0.2)',
     bg: 'rgba(245,158,11,0.05)',
   },
   {
     icon: Heart,
-    label: 'Valores',
-    title: 'Nossos Valores',
-    text: 'Inovação contínua, excelência técnica, transparência radical, foco no cliente e responsabilidade ética guiam cada decisão e cada linha de código que entregamos.',
+    label: 'Resultado',
+    title: 'Execução acima do discurso',
+    text: 'Não trabalhamos com tecnologia por estética. Trabalhamos com tecnologia para gerar resultado de forma prática, clara e sustentável.',
     color: '#00d4ff',
     border: 'rgba(0,212,255,0.2)',
     bg: 'rgba(0,212,255,0.05)',
   },
 ]
 
-const baseTeamMembers = [
-  {
-    initials: 'RS',
-    name: 'Rafael Silva',
-    role: 'CEO & Co-fundador',
-    bio: 'Visionário em tecnologia com mais de 10 anos liderando times de alta performance em startups e grandes corporações.',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    github: 'https://github.com',
-  },
-  {
-    initials: 'AC',
-    name: 'Ana Costa',
-    role: 'CTO & Co-fundadora',
-    bio: 'Arquiteta de software apaixonada por sistemas escaláveis, cloud-native e inteligência artificial aplicada a negócios.',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    github: 'https://github.com',
-  },
-  {
-    initials: 'ML',
-    name: 'Marcos Lima',
-    role: 'Head of Design',
-    bio: 'Especialista em UX/UI com foco em experiências digitais que convertem, encantam e geram impacto real para o usuário final.',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    github: 'https://github.com',
-  },
-  {
-    initials: 'JP',
-    name: 'Julia Pereira',
-    role: 'Head of Security',
-    bio: 'Especialista em cibersegurança certificada (CISSP, CEH) com foco em proteção de infraestrutura crítica e compliance.',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    github: 'https://github.com',
-  },
-]
+const baseFounder = {
+  initials: 'EW',
+  name: 'Eduardo Weber',
+  role: 'Founder',
+  paragraph1:
+    'A Ascend Tech Global é liderada por Eduardo Weber, profissional com atuação prática em tecnologia, automação e segurança aplicada a cenários reais.',
+  paragraph2:
+    'Com experiência no desenvolvimento de soluções para empresas, estabelecimentos comerciais e profissionais autônomos, sua atuação é focada em resolver problemas operacionais e estruturar negócios para crescimento.',
+  paragraph3:
+    'Cada projeto é conduzido com visão estratégica, execução técnica e foco direto em resultado.',
+  paragraph4:
+    'Dependendo da complexidade, a Ascend também atua com parceiros e especialistas, garantindo flexibilidade e escala conforme a necessidade de cada solução.',
+}
 
 const baseTimeline = [
   {
@@ -130,27 +102,31 @@ const copyByLocale = {
     heroTitle: 'SOBRE A',
     heroHighlight: 'ASCEND TECH GLOBAL',
     heroDescription:
-      'Somos uma empresa de tecnologia focada em transformar negócios com soluções inovadoras, times de alta performance e uma abordagem centrada em resultados reais. Desde 2019, elevamos negócios ao próximo nível com tecnologia de ponta e parceria genuína.',
+      'A Ascend Tech Global é uma empresa de tecnologia focada em estruturar operações, automatizar processos e desenvolver soluções sob medida para empresas que precisam crescer com eficiência e controle.',
+    heroDescriptionSecondary:
+      'Mais do que desenvolver sistemas, atuamos diretamente na organização da operação, reduzindo retrabalho, integrando processos e criando uma base sólida para crescimento.',
+    heroDescriptionTertiary:
+      'A tecnologia existe. O diferencial está em como ela é aplicada.',
     pillarsEyebrow: 'O Que Nos Move',
-    pillarsTitle: 'NOSSOS',
-    pillarsHighlight: 'PILARES',
-    teamEyebrow: 'Nosso Time',
-    teamTitle: 'AS PESSOAS POR TRÁS DA',
-    teamHighlight: 'ASCEND',
-    teamDescription: 'Profissionais apaixonados por tecnologia, inovação e pelo sucesso dos nossos clientes.',
+    pillarsTitle: 'O QUE NOS',
+    pillarsHighlight: 'MOVE',
+    teamEyebrow: 'Liderança',
+    teamTitle: 'QUEM ESTÁ',
+    teamHighlight: 'POR TRÁS',
+    teamDescription: 'Uma liderança técnica, prática e orientada a resultado, com execução próxima da operação e visão de crescimento.',
     timelineEyebrow: 'Nossa Evolucao',
     timelineTitle: 'A TRAJETORIA DA',
     timelineHighlight: 'ASCEND',
     timelineDescription:
       'Uma leitura clara da nossa evolucao, mostrando como a Ascend saiu da execucao inicial para uma operacao mais estrategica, robusta e pronta para crescer com consistencia.',
     ctaEyebrow: 'Próximos Passos',
-    ctaTitle: 'VAMOS TRABALHAR',
-    ctaHighlight: 'JUNTOS?',
+    ctaTitle: 'SUA OPERAÇÃO PODE SER',
+    ctaHighlight: 'MUITO MAIS EFICIENTE',
     ctaDescription:
-      'Estamos prontos para entender seus desafios e construir a solução tecnológica ideal para o seu negócio. Entre em contato e descubra como a Ascend pode elevar sua empresa.',
-    ctaButton: 'Falar com Especialista',
+      'Entre em contato e descubra onde estão os gargalos e como resolvê-los.',
+    ctaButton: 'Solicitar diagnóstico',
     pillars: basePillars,
-    teamMembers: baseTeamMembers,
+    founder: baseFounder,
     timeline: baseTimeline,
   },
   en: {
@@ -160,36 +136,46 @@ const copyByLocale = {
     heroTitle: 'ABOUT',
     heroHighlight: 'ASCEND TECH GLOBAL',
     heroDescription:
-      'We are a technology company focused on transforming businesses through innovative solutions, high-performance teams and a results-driven mindset. Since 2019, we have been helping companies level up through cutting-edge technology and genuine partnership.',
+      'Ascend Tech Global is a technology company focused on structuring operations, automating processes and building custom solutions for businesses that need to grow with efficiency and control.',
+    heroDescriptionSecondary:
+      'More than developing systems, we work directly on operational organization, reducing rework, integrating processes and creating a solid foundation for growth.',
+    heroDescriptionTertiary:
+      'The technology already exists. The difference is in how it is applied.',
     pillarsEyebrow: 'What Drives Us',
-    pillarsTitle: 'OUR',
-    pillarsHighlight: 'PILLARS',
-    teamEyebrow: 'Our Team',
-    teamTitle: 'THE PEOPLE BEHIND',
-    teamHighlight: 'ASCEND',
-    teamDescription: 'Professionals passionate about technology, innovation and the success of our clients.',
+    pillarsTitle: 'WHAT DRIVES',
+    pillarsHighlight: 'US',
+    teamEyebrow: 'Leadership',
+    teamTitle: 'WHO IS',
+    teamHighlight: 'BEHIND IT',
+    teamDescription: 'Technical leadership with practical execution, close to the operation and focused on delivering real outcomes.',
     timelineEyebrow: 'Our Journey',
     timelineTitle: 'THE STORY OF',
     timelineHighlight: 'ASCEND',
     timelineDescription:
       'A clearer view of our evolution, showing how Ascend moved from early execution into a stronger, more strategic and growth-ready operation.',
     ctaEyebrow: 'Next Steps',
-    ctaTitle: "LET'S WORK",
-    ctaHighlight: 'TOGETHER?',
+    ctaTitle: 'YOUR OPERATION CAN BE',
+    ctaHighlight: 'MUCH MORE EFFICIENT',
     ctaDescription:
-      'We are ready to understand your challenges and build the ideal technology solution for your business. Get in touch and discover how Ascend can take your company further.',
-    ctaButton: 'Talk to a Specialist',
+      'Get in touch and discover where the bottlenecks are and how to solve them.',
+    ctaButton: 'Request assessment',
     pillars: [
-      { ...basePillars[0], label: 'Mission', title: 'Our Mission', text: 'To elevate businesses through innovative technology, high-performance digital solutions and strategic partnerships that generate measurable, lasting results.' },
-      { ...basePillars[1], label: 'Vision', title: 'Our Vision', text: 'To become a global reference in technology consulting and development, recognized for turning ambition into results and placing our clients at the digital forefront.' },
-      { ...basePillars[2], label: 'Values', title: 'Our Values', text: 'Continuous innovation, technical excellence, radical transparency, customer focus and ethical responsibility guide every decision and every line of code we deliver.' },
+      { ...basePillars[0], label: 'Focus', title: 'Solve real operational problems', text: 'Our focus is to solve real operational problems by addressing bottlenecks, rework and inefficiencies that limit growth.' },
+      { ...basePillars[1], label: 'Structure', title: 'Technology applied with purpose', text: 'Every solution is designed to reduce manual effort, increase productivity, organize processes and support structured growth.' },
+      { ...basePillars[2], label: 'Outcome', title: 'Execution over discourse', text: 'We do not work with technology for aesthetics. We work with technology to generate practical, measurable and sustainable results.' },
     ],
-    teamMembers: [
-      { ...baseTeamMembers[0], role: 'CEO & Co-founder', bio: 'Technology visionary with over 10 years leading high-performance teams in startups and large enterprises.' },
-      { ...baseTeamMembers[1], role: 'CTO & Co-founder', bio: 'Software architect passionate about scalable systems, cloud-native platforms and artificial intelligence applied to business.' },
-      { ...baseTeamMembers[2], role: 'Head of Design', bio: 'UX/UI specialist focused on digital experiences that convert, delight and create real impact for end users.' },
-      { ...baseTeamMembers[3], role: 'Head of Security', bio: 'Certified cybersecurity specialist focused on protecting critical infrastructure and compliance.' },
-    ],
+    founder: {
+      ...baseFounder,
+      role: 'Founder',
+      paragraph1:
+        'Ascend Tech Global is led by Eduardo Weber, a professional with practical experience in technology, automation and security applied to real-world scenarios.',
+      paragraph2:
+        'With experience building solutions for companies, commercial establishments and independent professionals, his work is focused on solving operational problems and structuring businesses for growth.',
+      paragraph3:
+        'Each project is conducted with strategic vision, technical execution and direct focus on outcomes.',
+      paragraph4:
+        'Depending on the complexity, Ascend also works with partners and specialists, ensuring flexibility and scale according to the needs of each solution.',
+    },
     timeline: [
       {
         year: '2023',
@@ -224,36 +210,46 @@ const copyByLocale = {
     heroTitle: 'SOBRE',
     heroHighlight: 'ASCEND TECH GLOBAL',
     heroDescription:
-      'Somos una empresa de tecnología enfocada en transformar negocios con soluciones innovadoras, equipos de alto desempeño y un enfoque centrado en resultados reales. Desde 2019, llevamos empresas al siguiente nivel con tecnología de punta y una colaboración genuina.',
+      'Ascend Tech Global es una empresa de tecnología enfocada en estructurar operaciones, automatizar procesos y desarrollar soluciones a medida para empresas que necesitan crecer con eficiencia y control.',
+    heroDescriptionSecondary:
+      'Más que desarrollar sistemas, actuamos directamente en la organización de la operación, reduciendo retrabajo, integrando procesos y creando una base sólida para crecer.',
+    heroDescriptionTertiary:
+      'La tecnología ya existe. La diferencia está en cómo se aplica.',
     pillarsEyebrow: 'Lo Que Nos Mueve',
-    pillarsTitle: 'NUESTROS',
-    pillarsHighlight: 'PILARES',
-    teamEyebrow: 'Nuestro Equipo',
-    teamTitle: 'LAS PERSONAS DETRÁS DE',
-    teamHighlight: 'ASCEND',
-    teamDescription: 'Profesionales apasionados por la tecnología, la innovación y el éxito de nuestros clientes.',
+    pillarsTitle: 'LO QUE NOS',
+    pillarsHighlight: 'MUEVE',
+    teamEyebrow: 'Liderazgo',
+    teamTitle: 'QUIÉN ESTÁ',
+    teamHighlight: 'POR DETRÁS',
+    teamDescription: 'Un liderazgo técnico, práctico y orientado a resultados, con ejecución cercana a la operación y visión de crecimiento.',
     timelineEyebrow: 'Nuestra Evolucion',
     timelineTitle: 'LA TRAYECTORIA DE',
     timelineHighlight: 'ASCEND',
     timelineDescription:
       'Una lectura clara de nuestra evolucion, mostrando como Ascend paso de la ejecucion inicial a una operacion mas estrategica, solida y lista para crecer con consistencia.',
     ctaEyebrow: 'Próximos Pasos',
-    ctaTitle: 'VAMOS A TRABAJAR',
-    ctaHighlight: 'JUNTOS?',
+    ctaTitle: 'SU OPERACIÓN PUEDE SER',
+    ctaHighlight: 'MUCHO MÁS EFICIENTE',
     ctaDescription:
-      'Estamos listos para entender sus desafíos y construir la solución tecnológica ideal para su negocio. Contáctenos y descubra cómo Ascend puede impulsar su empresa.',
-    ctaButton: 'Hablar con un Especialista',
+      'Póngase en contacto y descubra dónde están los cuellos de botella y cómo resolverlos.',
+    ctaButton: 'Solicitar diagnóstico',
     pillars: [
-      { ...basePillars[0], label: 'Misión', title: 'Nuestra Misión', text: 'Elevar negocios a un nuevo nivel mediante tecnología innovadora, soluciones digitales de alto rendimiento y alianzas estratégicas que generen resultados medibles y duraderos.' },
-      { ...basePillars[1], label: 'Visión', title: 'Nuestra Visión', text: 'Ser la referencia global en consultoría y desarrollo tecnológico, reconocida por transformar la ambición en resultados y colocar a nuestros clientes en la vanguardia digital.' },
-      { ...basePillars[2], label: 'Valores', title: 'Nuestros Valores', text: 'La innovación continua, la excelencia técnica, la transparencia radical, el enfoque en el cliente y la responsabilidad ética guían cada decisión y cada línea de código que entregamos.' },
+      { ...basePillars[0], label: 'Foco', title: 'Resolver la operación real', text: 'Nuestro foco es resolver problemas reales de operación, atacando cuellos de botella, retrabajo e ineficiencias que frenan el crecimiento.' },
+      { ...basePillars[1], label: 'Estructura', title: 'Tecnología aplicada con criterio', text: 'Cada solución está pensada para reducir esfuerzo manual, aumentar productividad, organizar procesos y permitir crecimiento con estructura.' },
+      { ...basePillars[2], label: 'Resultado', title: 'Ejecución por encima del discurso', text: 'No trabajamos con tecnología por estética. Trabajamos con tecnología para generar resultados de forma práctica, clara y sostenible.' },
     ],
-    teamMembers: [
-      { ...baseTeamMembers[0], role: 'CEO y Cofundador', bio: 'Visionario tecnológico con más de 10 años liderando equipos de alto rendimiento en startups y grandes corporaciones.' },
-      { ...baseTeamMembers[1], role: 'CTO y Cofundadora', bio: 'Arquitecta de software apasionada por sistemas escalables, plataformas cloud-native e inteligencia artificial aplicada a negocios.' },
-      { ...baseTeamMembers[2], role: 'Head of Design', bio: 'Especialista en UX/UI enfocada en experiencias digitales que convierten, encantan y generan impacto real en el usuario final.' },
-      { ...baseTeamMembers[3], role: 'Head of Security', bio: 'Especialista certificada en ciberseguridad enfocada en la protección de infraestructura crítica y cumplimiento.' },
-    ],
+    founder: {
+      ...baseFounder,
+      role: 'Founder',
+      paragraph1:
+        'Ascend Tech Global es liderada por Eduardo Weber, profesional con actuación práctica en tecnología, automatización y seguridad aplicadas a escenarios reales.',
+      paragraph2:
+        'Con experiencia en el desarrollo de soluciones para empresas, comercios y profesionales autónomos, su trabajo está enfocado en resolver problemas operativos y estructurar negocios para crecer.',
+      paragraph3:
+        'Cada proyecto se conduce con visión estratégica, ejecución técnica y foco directo en resultado.',
+      paragraph4:
+        'Según la complejidad, Ascend también actúa con socios y especialistas, garantizando flexibilidad y escala conforme a la necesidad de cada solución.',
+    },
     timeline: [
       {
         year: '2023',
@@ -328,6 +324,12 @@ export default function SobreContent() {
             <motion.p variants={fadeUp} className="max-w-2xl text-base leading-relaxed text-white/60">
               {copy.heroDescription}
             </motion.p>
+            <motion.p variants={fadeUp} className="mt-4 max-w-2xl text-base leading-relaxed text-white/60">
+              {copy.heroDescriptionSecondary}
+            </motion.p>
+            <motion.p variants={fadeUp} className="mt-4 max-w-2xl text-base leading-relaxed text-white/72">
+              {copy.heroDescriptionTertiary}
+            </motion.p>
           </motion.div>
         </div>
 
@@ -398,7 +400,7 @@ export default function SobreContent() {
         </div>
       </section>
 
-      {/* ── TEAM ─────────────────────────────────────────── */}
+      {/* ── FOUNDER ──────────────────────────────────────── */}
       <section className="relative py-20" style={{ backgroundColor: '#030712' }}>
         <div
           aria-hidden
@@ -430,56 +432,51 @@ export default function SobreContent() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-60px' }}
-            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+            className="grid gap-6"
           >
-            {copy.teamMembers.map((member) => (
-              <motion.div
-                key={member.name}
-                variants={fadeUp}
-                className="glow-card rounded-2xl p-6 flex flex-col items-center gap-4 text-center"
-              >
-                <div
-                  className="flex h-20 w-20 items-center justify-center rounded-full text-xl font-black text-white"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(0,212,255,0.2) 0%, rgba(0,212,255,0.06) 100%)',
-                    border: '2px solid rgba(0,212,255,0.35)',
-                    boxShadow: '0 0 24px rgba(0,212,255,0.15)',
-                    letterSpacing: '0.05em',
-                  }}
-                >
-                  {member.initials}
+            <motion.div
+              variants={fadeUp}
+              className="glow-card rounded-2xl p-6 sm:p-8"
+            >
+              <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
+                <div className="flex flex-col items-center text-center lg:w-64 lg:items-start lg:text-left">
+                  <div
+                    className="flex h-20 w-20 items-center justify-center rounded-full text-xl font-black text-white"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(0,212,255,0.2) 0%, rgba(0,212,255,0.06) 100%)',
+                      border: '2px solid rgba(0,212,255,0.35)',
+                      boxShadow: '0 0 24px rgba(0,212,255,0.15)',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    {copy.founder.initials}
+                  </div>
+
+                  <div className="mt-4">
+                    <h3 className="text-sm font-extrabold uppercase tracking-wide text-white">
+                      {copy.founder.name}
+                    </h3>
+                    <p className="text-gradient mt-1 text-[11px] font-semibold uppercase tracking-widest">
+                      {copy.founder.role}
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="text-sm font-extrabold uppercase tracking-wide text-white">{member.name}</h3>
-                  <p className="text-gradient mt-1 text-[11px] font-semibold uppercase tracking-widest">
-                    {member.role}
-                  </p>
-                </div>
-
-                <p className="flex-1 text-xs leading-relaxed text-gray-400">{member.bio}</p>
-
-                <div className="flex items-center gap-3">
-                  {[
-                    { icon: Linkedin, href: member.linkedin, label: 'LinkedIn' },
-                    { icon: Twitter, href: member.twitter, label: 'Twitter' },
-                    { icon: Github, href: member.github, label: 'GitHub' },
-                  ].map(({ icon: Icon, href, label }) => (
-                    <a
-                      key={label}
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={label}
-                      className="flex h-8 w-8 items-center justify-center rounded-lg transition-all duration-200 hover:scale-110"
-                      style={{ background: 'rgba(0,212,255,0.06)', border: '1px solid rgba(0,212,255,0.2)' }}
+                <div className="grid flex-1 gap-4">
+                  {[copy.founder.paragraph1, copy.founder.paragraph2, copy.founder.paragraph3, copy.founder.paragraph4].map((paragraph, index) => (
+                    <div
+                      key={paragraph}
+                      className="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-5"
                     >
-                      <Icon size={14} color="rgba(0,212,255,0.7)" strokeWidth={1.8} />
-                    </a>
+                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/38">
+                        0{index + 1}
+                      </p>
+                      <p className="mt-3 text-sm leading-7 text-white/68">{paragraph}</p>
+                    </div>
                   ))}
                 </div>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
