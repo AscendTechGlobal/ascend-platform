@@ -54,29 +54,105 @@
     "stat3Value": "5+",
     "stat3Label": "Years"
   },
+  "problemSolution": {
+    "problemEyebrow": "The Challenge",
+    "problemTitle": "Companies lose efficiency every day because of manual processes and disorganized operations.",
+    "problemParagraph1": "Spreadsheets, rework, repetitive tasks and lack of integration slow growth and consume time that should be used to sell more, serve better and scale.",
+    "problemParagraph2": "The technology already exists. In most cases, the real problem is that it is not being applied in the right way.",
+    "solutionEyebrow": "The Solution",
+    "solutionTitle": "Ascend turns operations into structure.",
+    "solutionParagraph1": "We build tailored solutions to automate processes, connect systems, organize workflows and create a technology foundation ready to grow.",
+    "solutionParagraph2": "We do not deliver technology alone. We deliver solutions that solve real business problems."
+  },
   "about": {
     "eyebrow": "Who We Are",
     "title": "ABOUT ASCEND",
     "titleHighlight": "TECH GLOBAL",
-    "paragraph1": "Ascend Tech Global is a leading technology solutions provider dedicated to helping businesses worldwide thrive in a rapidly evolving digital landscape. With years of experience and a team of skilled professionals, we provide innovative, reliable and scalable solutions to empower your business.",
-    "paragraph2": "Our mission is to bridge the gap between ambition and achievement — combining deep technical expertise with a client-first mindset to deliver measurable results, lasting partnerships, and technology that grows with you.",
-    "bullet1": "Innovative & future-ready technology solutions",
-    "bullet2": "Experienced team of global tech professionals",
-    "bullet3": "End-to-end support from strategy to deployment",
+    "paragraph1": "Ascend Tech Global develops solutions in automation, artificial intelligence, software and security for companies that need to gain efficiency, organize operations and grow with structure.",
+    "paragraph2": "Our mission is to transform ambition into execution, combining strategic vision, technical expertise and a results-first mindset to deliver technology that solves real problems and evolves with the business.",
+    "bullet1": "Automation and systems designed for real operating scenarios",
+    "bullet2": "Hands-on experience in technology, security and digital structuring",
+    "bullet3": "Consultative support from strategy to implementation",
     "cta": "Learn Our Story"
   },
   "services": {
     "eyebrow": "What We Do",
     "title": "OUR",
     "titleHighlight": "SERVICES",
-    "subtitle": "Driving Growth and Success through Innovation and Technology.",
+    "subtitle": "Applied technology solutions built to increase efficiency, reduce rework and support structured growth.",
     "learnMore": "Learn More",
+    "items": [
+      {
+        "title": "Process automation",
+        "description": "We eliminate manual and repetitive tasks, reducing errors and increasing operational productivity."
+      },
+      {
+        "title": "Systems development",
+        "description": "We build custom systems designed around your business reality, focused on efficiency and scalability."
+      },
+      {
+        "title": "Applied Artificial Intelligence",
+        "description": "We integrate AI into workflows to optimize decision-making, service and team productivity."
+      },
+      {
+        "title": "Integrations and APIs",
+        "description": "We connect tools and systems to create unified, efficient workflows."
+      },
+      {
+        "title": "Cybersecurity and auditing",
+        "description": "We assess systems, identify vulnerabilities and implement security practices to protect data, operations and compliance."
+      }
+    ],
     "fallback": {
       "consulting": { "title": "Tech", "titleHighlight": "Consulting", "description": "Expert guidance to optimize your business with cutting-edge technology." },
       "software": { "title": "Software", "titleHighlight": "Development", "description": "Custom software and applications tailored to your business needs." },
       "cyber": { "title": "Cyber", "titleHighlight": "Security", "description": "Protect your data and systems with future-proof security solutions." },
       "cloud": { "title": "Cloud", "titleHighlight": "Solutions", "description": "Scalable and secure cloud services to streamline your operations." }
     }
+  },
+  "differentials": {
+    "eyebrow": "Differential",
+    "title": "Technology applied to real operations",
+    "paragraph1": "Unlike generic agencies and one-size-fits-all solutions, we work with a focus on real operations, efficiency and structured growth.",
+    "paragraph2": "We understand the problem, structure the solution and deliver technology that works in the day-to-day reality of your business.",
+    "paragraph3": "Every project is designed to generate results, not just to look good."
+  },
+  "audience": {
+    "eyebrow": "Who It Is For",
+    "title": "Solutions for companies that need to grow with structure",
+    "description": "We serve companies, firms and professionals who need to organize operations and gain scale with more efficiency.",
+    "items": [
+      "Organize processes",
+      "Reduce manual work",
+      "Gain operational efficiency",
+      "Scale without increasing headcount",
+      "Professionalize operations"
+    ]
+  },
+  "authority": {
+    "eyebrow": "Authority",
+    "title": "Hands-on experience applied to real-world scenarios",
+    "paragraph1": "More than 5 years of hands-on experience in technology, automation and security applied to real-world environments.",
+    "paragraph2": "We use modern technologies, scalable architecture and strong engineering practices to ensure performance, security and continuous growth."
+  },
+  "results": {
+    "eyebrow": "Impact",
+    "title": "What changes when operations gain structure",
+    "description": "With Ascend's solutions, your company starts operating with more clarity, control and room to grow.",
+    "items": [
+      "More control",
+      "Less rework",
+      "Higher productivity",
+      "Organized processes",
+      "A foundation ready for growth"
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Next Step",
+    "title": "Your operation can be much more efficient than it is today.",
+    "description": "Request a free assessment and discover where the bottlenecks in your business are.",
+    "primaryButton": "Request assessment",
+    "secondaryButton": "Talk to a specialist"
   },
   "whyChooseUs": {
     "eyebrow": "Our Strengths",

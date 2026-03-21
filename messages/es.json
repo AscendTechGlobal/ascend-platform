@@ -56,16 +56,26 @@
     "stat3Value": "5+",
     "stat3Label": "Años"
   },
+  "problemSolution": {
+    "problemEyebrow": "El Desafío",
+    "problemTitle": "Las empresas pierden eficiencia todos los días por procesos manuales y operaciones desorganizadas.",
+    "problemParagraph1": "Hojas de cálculo, retrabajo, tareas repetitivas y falta de integración frenan el crecimiento y consumen tiempo que debería usarse para vender más, atender mejor y escalar.",
+    "problemParagraph2": "La tecnología ya existe. En la mayoría de los casos, el problema es que no se está aplicando de la forma correcta.",
+    "solutionEyebrow": "La Solución",
+    "solutionTitle": "Ascend transforma la operación en estructura.",
+    "solutionParagraph1": "Desarrollamos soluciones a medida para automatizar procesos, integrar sistemas, organizar flujos y crear una base tecnológica lista para crecer.",
+    "solutionParagraph2": "No entregamos solo tecnología. Entregamos soluciones que resuelven problemas reales."
+  },
 
   "about": {
     "eyebrow": "Quiénes Somos",
     "title": "SOBRE ASCEND",
     "titleHighlight": "TECH GLOBAL",
-    "paragraph1": "Ascend Tech Global es una empresa líder en soluciones tecnológicas, dedicada a ayudar a negocios de todo el mundo a prosperar en un escenario digital en constante evolución. Con años de experiencia y un equipo de profesionales altamente calificados, entregamos soluciones innovadoras, confiables y escalables para impulsar su negocio.",
-    "paragraph2": "Nuestra misión es transformar la ambición en logros — combinando experiencia técnica profunda con una mentalidad centrada en el cliente para generar resultados medibles, asociaciones duraderas y tecnología que crece con usted.",
-    "bullet1": "Soluciones tecnológicas innovadoras y preparadas para el futuro",
-    "bullet2": "Equipo experimentado de profesionales tecnológicos globales",
-    "bullet3": "Soporte completo: de la estrategia a la implementación",
+    "paragraph1": "Ascend Tech Global desarrolla soluciones en automatización, inteligencia artificial, software y seguridad para empresas que necesitan ganar eficiencia, organizar operaciones y crecer con estructura.",
+    "paragraph2": "Nuestra misión es transformar la ambición en ejecución, combinando visión estratégica, experiencia técnica y enfoque en resultados para entregar tecnología que resuelve problemas reales y acompaña la evolución del negocio.",
+    "bullet1": "Automatización y sistemas pensados para escenarios reales de operación",
+    "bullet2": "Experiencia práctica en tecnología, seguridad y estructuración digital",
+    "bullet3": "Actuación consultiva desde la estrategia hasta la implementación",
     "cta": "Conozca Nuestra Historia"
   },
 
@@ -73,8 +83,30 @@
     "eyebrow": "Lo Que Hacemos",
     "title": "NUESTROS",
     "titleHighlight": "SERVICIOS",
-    "subtitle": "Impulsando el crecimiento y el éxito a través de la innovación y la tecnología.",
+    "subtitle": "Soluciones tecnológicas aplicadas para aumentar la eficiencia, reducir el retrabajo y generar crecimiento con estructura.",
     "learnMore": "Saber Más",
+    "items": [
+      {
+        "title": "Automatización de procesos",
+        "description": "Eliminamos tareas manuales y repetitivas, reduciendo errores y aumentando la productividad de la operación."
+      },
+      {
+        "title": "Desarrollo de sistemas",
+        "description": "Creamos sistemas personalizados, adaptados a la realidad del negocio, con foco en eficiencia y escalabilidad."
+      },
+      {
+        "title": "Inteligencia Artificial aplicada",
+        "description": "Integramos IA en los procesos para optimizar decisiones, atención y productividad."
+      },
+      {
+        "title": "Integraciones y APIs",
+        "description": "Conectamos herramientas y sistemas para crear flujos de trabajo unificados y eficientes."
+      },
+      {
+        "title": "Ciberseguridad y auditoría",
+        "description": "Analizamos sistemas, identificamos vulnerabilidades e implementamos prácticas de seguridad para proteger datos, operaciones y cumplimiento."
+      }
+    ],
     "fallback": {
       "consulting": {
         "title": "Consultoría",
@@ -97,6 +129,50 @@
         "description": "Servicios en la nube escalables y seguros para modernizar su operación y reducir costos."
       }
     }
+  },
+  "differentials": {
+    "eyebrow": "Diferencial",
+    "title": "Tecnología aplicada a la operación real",
+    "paragraph1": "A diferencia de agencias y soluciones genéricas, trabajamos con foco en la operación real, la eficiencia y el crecimiento estructurado.",
+    "paragraph2": "Entendemos el problema, estructuramos la solución y entregamos tecnología que funciona en el día a día.",
+    "paragraph3": "Cada proyecto está pensado para generar resultados, no solo para verse bien."
+  },
+  "audience": {
+    "eyebrow": "Para Quién Es",
+    "title": "Soluciones para quienes necesitan crecer con estructura",
+    "description": "Atendemos empresas, despachos y profesionales que necesitan organizar la operación y ganar escala con más eficiencia.",
+    "items": [
+      "Organizar procesos",
+      "Reducir trabajo manual",
+      "Ganar eficiencia operativa",
+      "Escalar sin aumentar el equipo",
+      "Profesionalizar la operación"
+    ]
+  },
+  "authority": {
+    "eyebrow": "Autoridad",
+    "title": "Experiencia práctica aplicada a escenarios reales",
+    "paragraph1": "Más de 5 años de experiencia práctica en tecnología, automatización y seguridad aplicadas a escenarios reales.",
+    "paragraph2": "Utilizamos tecnologías modernas, arquitectura escalable y buenas prácticas de desarrollo para garantizar rendimiento, seguridad y crecimiento continuo."
+  },
+  "results": {
+    "eyebrow": "Impacto",
+    "title": "Lo que cambia cuando la operación gana estructura",
+    "description": "Con las soluciones de Ascend, su empresa pasa a operar con más claridad, control y capacidad de crecimiento.",
+    "items": [
+      "Más control",
+      "Menos retrabajo",
+      "Mayor productividad",
+      "Procesos organizados",
+      "Base preparada para crecer"
+    ]
+  },
+  "finalCta": {
+    "eyebrow": "Próximo Paso",
+    "title": "Su operación puede ser mucho más eficiente de lo que es hoy.",
+    "description": "Solicite un análisis gratuito y descubra dónde están los cuellos de botella de su negocio.",
+    "primaryButton": "Solicitar diagnóstico",
+    "secondaryButton": "Hablar con un especialista"
   },
 
   "whyChooseUs": {

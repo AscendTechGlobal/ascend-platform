@@ -43,61 +43,122 @@
     "badge": "Parceiro Tech Global",
     "title": "Ascend",
     "titleHighlight": "Tech Global",
-    "subtitle": "Estratégia, software e execução sênior para empresas que precisam modernizar, vender melhor e escalar com confiança.",
-    "description": "A Ascend Tech Global transforma ambição em operação digital madura, com soluções mais elegantes, mais eficientes e preparadas para crescimento real.",
-    "cta": "Solicitar Diagnóstico",
-    "ctaSecondary": "Ver Portfólio",
-    "trustLabel": "Entrega consultiva com visão de produto, negócio e escala.",
-    "trustDescription": "Mais clareza na mensagem, mais autoridade visual e um caminho de conversão mais direto.",
+    "subtitle": "Transformamos processos manuais em sistemas automatizados que aumentam a eficiência e escalam o seu negócio.",
+    "description": "Automação, inteligência artificial e desenvolvimento sob medida para empresas que querem crescer sem aumentar complexidade operacional.",
+    "cta": "Solicitar Diagnóstico Gratuito",
+    "ctaSecondary": "Falar com especialista",
+    "trustLabel": "Soluções com visão de produto, operação e escala.",
+    "trustDescription": "Tecnologia aplicada para reduzir retrabalho, organizar processos e acelerar crescimento.",
     "stat1Value": "50+",
     "stat1Label": "Projetos",
     "stat2Value": "30+",
     "stat2Label": "Clientes",
     "stat3Value": "5+",
-    "stat3Label": "Anos"
+    "stat3Label": "Anos de experiência"
   },
 
-  "about": {
-    "eyebrow": "Quem Somos",
-    "title": "SOBRE A ASCEND",
-    "titleHighlight": "TECH GLOBAL",
-    "paragraph1": "A Ascend Tech Global é uma empresa líder em soluções tecnológicas, dedicada a ajudar negócios de todo o mundo a prosperar em um cenário digital em constante evolução. Com anos de experiência e uma equipe de profissionais altamente qualificados, entregamos soluções inovadoras, confiáveis e escaláveis para impulsionar o seu negócio.",
-    "paragraph2": "Nossa missão é transformar ambição em realização — combinando expertise técnica profunda com uma mentalidade centrada no cliente para gerar resultados mensuráveis, parcerias duradouras e tecnologia que cresce com você.",
-    "bullet1": "Soluções tecnológicas inovadoras e preparadas para o futuro",
-    "bullet2": "Equipe experiente de profissionais de tecnologia globais",
-    "bullet3": "Suporte completo: da estratégia à implantação",
-    "cta": "Conheça Nossa História"
+  "problemSolution": {
+    "problemEyebrow": "O Desafio",
+    "problemTitle": "Empresas perdem eficiência todos os dias com processos manuais e operações desorganizadas.",
+    "problemParagraph1": "Planilhas, retrabalho, tarefas repetitivas e falta de integração travam o crescimento e consomem tempo que deveria estar sendo usado para vender, atender melhor e escalar.",
+    "problemParagraph2": "A tecnologia existe. O problema é que, na maioria dos casos, ela não está sendo aplicada da forma certa.",
+    "solutionEyebrow": "A Solução",
+    "solutionTitle": "A Ascend transforma operação em estrutura.",
+    "solutionParagraph1": "Desenvolvemos soluções sob medida para automatizar processos, integrar sistemas, organizar fluxos e criar uma base tecnológica preparada para crescer.",
+    "solutionParagraph2": "Não entregamos apenas tecnologia. Entregamos soluções que resolvem problemas reais."
   },
 
   "services": {
     "eyebrow": "O Que Fazemos",
     "title": "NOSSOS",
     "titleHighlight": "SERVIÇOS",
-    "subtitle": "Impulsionando crescimento e sucesso por meio de inovação e tecnologia.",
+    "subtitle": "Soluções tecnológicas aplicadas para aumentar eficiência, reduzir retrabalho e gerar crescimento com estrutura.",
     "learnMore": "Saiba Mais",
-    "fallback": {
-      "consulting": {
-        "title": "Consultoria",
-        "titleHighlight": "Tecnológica",
-        "description": "Orientação especializada para otimizar seu negócio com as melhores soluções tecnológicas do mercado."
-      },
-      "software": {
-        "title": "Desenvolvimento",
-        "titleHighlight": "de Software",
-        "description": "Aplicações e sistemas personalizados, construídos sob medida para as necessidades do seu negócio."
-      },
-      "cyber": {
-        "title": "Ciber",
-        "titleHighlight": "segurança",
-        "description": "Proteja seus dados e sistemas com soluções de segurança robustas e preparadas para o futuro."
-      },
-      "cloud": {
-        "title": "Soluções",
-        "titleHighlight": "em Nuvem",
-        "description": "Serviços de nuvem escaláveis e seguros para modernizar sua operação e reduzir custos."
-      }
-    }
+    "items": [
+  {
+    "title": "Automação de processos",
+    "description": "Eliminamos tarefas manuais e repetitivas, reduzindo erros e aumentando a produtividade da operação."
   },
+  {
+    "title": "Desenvolvimento de sistemas",
+    "description": "Criamos sistemas personalizados, adaptados à realidade do negócio, com foco em eficiência e escalabilidade."
+  },
+  {
+    "title": "Inteligência Artificial aplicada",
+    "description": "Integramos IA aos processos para otimizar decisões, atendimento e produtividade."
+  },
+  {
+    "title": "Integrações e APIs",
+    "description": "Conectamos ferramentas e sistemas para criar fluxos de trabalho unificados e eficientes."
+  },
+  {
+    "title": "Cibersegurança e auditoria",
+    "description": "Analisamos sistemas, identificamos vulnerabilidades e implementamos práticas de segurança para proteger dados, operações e garantir conformidade."
+      }
+    ]
+  },
+
+  "differentials": {
+    "eyebrow": "Diferencial",
+    "title": "Tecnologia aplicada à operação real",
+    "paragraph1": "Diferente de agências e soluções genéricas, trabalhamos com foco em operação real, eficiência e crescimento estruturado.",
+    "paragraph2": "Entendemos o problema, estruturamos a solução e entregamos tecnologia que funciona no dia a dia.",
+    "paragraph3": "Cada projeto é pensado para gerar resultado, não apenas para parecer bonito."
+  },
+
+  "audience": {
+    "eyebrow": "Para Quem É",
+    "title": "Soluções para quem precisa crescer com estrutura",
+    "description": "Atendemos empresas, escritórios e profissionais que precisam organizar a operação e ganhar escala com mais eficiência.",
+    "items": [
+      "Organizar processos",
+      "Reduzir trabalho manual",
+      "Ganhar eficiência operacional",
+      "Escalar sem aumentar equipe",
+      "Profissionalizar a operação"
+    ]
+  },
+
+  "authority": {
+    "eyebrow": "Autoridade",
+    "title": "Experiência prática aplicada a cenários reais",
+    "paragraph1": "Mais de 5 anos de experiência prática em tecnologia, automação e segurança aplicadas a cenários reais.",
+    "paragraph2": "Utilizamos tecnologias modernas, arquitetura escalável e boas práticas de desenvolvimento para garantir performance, segurança e crescimento contínuo."
+  },
+
+  "results": {
+    "eyebrow": "Impacto",
+    "title": "O que muda quando a operação ganha estrutura",
+    "description": "Com as soluções da Ascend, sua empresa passa a operar com mais clareza, controle e capacidade de crescimento.",
+    "items": [
+      "Mais controle",
+      "Menos retrabalho",
+      "Maior produtividade",
+      "Processos organizados",
+      "Base preparada para crescimento"
+    ]
+  },
+
+  "finalCta": {
+    "eyebrow": "Próximo Passo",
+    "title": "Sua operação pode ser muito mais eficiente do que é hoje.",
+    "description": "Solicite uma análise gratuita e descubra onde estão os gargalos do seu negócio.",
+    "primaryButton": "Solicitar diagnóstico",
+    "secondaryButton": "Falar com especialista"
+  },
+
+  "about": {
+    "eyebrow": "Quem Somos",
+    "title": "SOBRE A ASCEND",
+    "titleHighlight": "TECH GLOBAL",
+    "paragraph1": "A Ascend Tech Global desenvolve soluções em automação, inteligência artificial, software e segurança para empresas que precisam ganhar eficiência, organizar operações e crescer com estrutura.",
+    "paragraph2": "Nossa missão é transformar ambição em execução, combinando visão estratégica, expertise técnica e foco em resultado para entregar tecnologia que resolve problemas reais e acompanha a evolução do negócio.",
+    "bullet1": "Automação e sistemas pensados para cenários reais de operação",
+    "bullet2": "Experiência prática em tecnologia, segurança e estruturação digital",
+    "bullet3": "Atuação consultiva da estratégia à implementação",
+    "cta": "Conheça Nossa História"
+  },
+
 
   "whyChooseUs": {
     "eyebrow": "Nossos Diferenciais",

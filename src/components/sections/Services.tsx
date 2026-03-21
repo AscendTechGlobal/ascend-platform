@@ -2,17 +2,31 @@
 
 import { motion, type Variants } from 'framer-motion'
 import { useLocale } from 'next-intl'
-import { ArrowRight, Cloud, Code2, Lightbulb, Shield, type LucideIcon } from 'lucide-react'
+import {
+  ArrowRight,
+  Bot,
+  Cloud,
+  Code2,
+  Lightbulb,
+  Shield,
+  type LucideIcon,
+} from 'lucide-react'
 import type { Service } from '@/types'
 import { useTranslations } from '@/lib/i18n'
 
-const ICON_MAP: Record<string, LucideIcon> = { Lightbulb, Code2, Shield, Cloud }
+type TranslationServiceItem = {
+  title: string
+  description: string
+}
+
+const ICON_MAP: Record<string, LucideIcon> = { Lightbulb, Code2, Shield, Cloud, Bot }
 const TRANSLATION_KEY_BY_ICON: Record<string, 'consulting' | 'software' | 'cyber' | 'cloud'> = {
   Lightbulb: 'consulting',
   Code2: 'software',
   Shield: 'cyber',
   Cloud: 'cloud',
 }
+const MESSAGE_ICONS: LucideIcon[] = [Lightbulb, Code2, Bot, Cloud, Shield]
 
 const ENGLISH_DEFAULT_TITLES = new Set([
   'Tech Consulting',
@@ -52,6 +66,23 @@ export default function Services({ services }: { services?: Service[] }) {
   const locale = useLocale()
   const t = useTranslations('services')
 
+  let translationItems: TranslationServiceItem[] = []
+
+  try {
+    const rawItems = t.raw('items')
+    if (Array.isArray(rawItems)) {
+      translationItems = rawItems.filter(
+        (item): item is TranslationServiceItem =>
+          !!item &&
+          typeof item === 'object' &&
+          typeof item.title === 'string' &&
+          typeof item.description === 'string',
+      )
+    }
+  } catch {
+    translationItems = []
+  }
+
   const fallback = [
     { icon: 'Lightbulb', ...parseTitle(`${t('fallback.consulting.title')} ${t('fallback.consulting.titleHighlight')}`), description: t('fallback.consulting.description') },
     { icon: 'Code2', ...parseTitle(`${t('fallback.software.title')} ${t('fallback.software.titleHighlight')}`), description: t('fallback.software.description') },
@@ -60,7 +91,13 @@ export default function Services({ services }: { services?: Service[] }) {
   ]
 
   const items =
-    services && services.length > 0
+    translationItems.length > 0
+      ? translationItems.map((service, index) => ({
+          icon: MESSAGE_ICONS[index % MESSAGE_ICONS.length],
+          ...parseTitle(service.title),
+          description: service.description,
+        }))
+      : services && services.length > 0
       ? services.map((service) => {
           const translationKey = TRANSLATION_KEY_BY_ICON[service.icon ?? '']
           const shouldUseTranslatedFallback =
