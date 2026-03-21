@@ -11,9 +11,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ascendtechglobal.com'),
   title: 'Ascend Tech Global',
   description:
-    'Ascend Tech Global entrega desenvolvimento de software, consultoria em tecnologia, cloud e soluções digitais para empresas que querem crescer com performance.',
+    'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

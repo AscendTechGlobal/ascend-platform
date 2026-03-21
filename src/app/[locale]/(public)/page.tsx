@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
 import { createClient } from '@/lib/supabase/server'
 import Hero from '@/components/sections/Hero'
@@ -14,6 +15,33 @@ import { getSiteSettings } from '@/lib/site-settings'
 
 export const dynamic = 'force-dynamic'
 
+type Props = {
+  params: Promise<{ locale: string }>
+}
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params
+  const baseUrl = 'https://ascendtechglobal.com'
+  const path = locale === 'pt-BR' ? '/pt-BR' : `/${locale}`
+  const url = `${baseUrl}${path}`
+
+  return {
+    title: 'Ascend Tech Global | Automação, IA e Sistemas Sob Medida',
+    description:
+      'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: 'Ascend Tech Global | Automação, IA e Sistemas Sob Medida',
+      description:
+        'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+      url,
+      siteName: 'Ascend Tech Global',
+      locale,
+      type: 'website',
+    },
+  }
+}
 async function getData() {
   const supabase = await createClient()
   const { data } = await supabase
