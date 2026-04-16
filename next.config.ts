@@ -29,18 +29,30 @@ const csp = [
   .filter(Boolean)
   .join('; ')
 
+// Supabase storage hostname derived from the project URL.
+// Falls back to a wildcard only when the URL is not set (local dev without env).
+const supabaseStorageHostname = supabaseOrigin
+  ? new URL(supabaseOrigin).hostname
+  : '*.supabase.co'
+
 const nextConfig: NextConfig = {
   ...(distDir ? { distDir } : {}),
   poweredByHeader: false,
   images: {
     remotePatterns: [
+      // Supabase Storage (project-specific bucket URLs)
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: supabaseStorageHostname,
+      },
+      // Supabase CDN / storage sub-domains
+      {
+        protocol: 'https',
+        hostname: '*.supabase.co',
       },
       {
-        protocol: 'http',
-        hostname: '**',
+        protocol: 'https',
+        hostname: '*.supabase.in',
       },
     ],
   },
@@ -54,6 +66,10 @@ const nextConfig: NextConfig = {
           { key: 'X-Frame-Options', value: 'DENY' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+          // HSTS: enforce HTTPS for 1 year, include subdomains, allow preload
+          ...(process.env.NODE_ENV === 'production'
+            ? [{ key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' }]
+            : []),
         ],
       },
     ]

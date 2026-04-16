@@ -6,19 +6,48 @@ import { getLocale } from 'next-intl/server'
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-sans',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ascendtechglobal.com'),
-  title: 'Ascend Tech Global',
+  title: {
+    default: 'Ascend Tech Global',
+    template: '%s | Ascend Tech Global',
+  },
   description:
     'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'Ascend Tech Global',
+    title: 'Ascend Tech Global',
+    description:
+      'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+    url: 'https://ascendtechglobal.com',
+    locale: 'pt_BR',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ascend Tech Global',
+    description:
+      'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
@@ -48,8 +77,8 @@ export default async function RootLayout({
           theme="dark"
           toastOptions={{
             style: {
-              background: '#0a1628',
-              border: '1px solid rgba(0,212,255,0.2)',
+              background: '#0a0a0a',
+              border: '1px solid rgba(59,130,246,0.2)',
               color: 'white',
             },
           }}

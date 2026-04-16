@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -21,6 +22,48 @@ async function getPost(slug: string): Promise<BlogPost | null> {
   return data
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, slug } = await params
+  const post = await getPost(slug)
+  if (!post) return {}
+
+  const baseUrl = 'https://ascendtechglobal.com'
+  const url = `${baseUrl}/${locale}/blog/${slug}`
+  const title = post.title
+  const description = post.excerpt ?? post.title
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: {
+        'pt-BR': `${baseUrl}/pt-BR/blog/${slug}`,
+        en: `${baseUrl}/en/blog/${slug}`,
+        es: `${baseUrl}/es/blog/${slug}`,
+        'x-default': `${baseUrl}/pt-BR/blog/${slug}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: 'Ascend Tech Global',
+      locale,
+      type: 'article',
+      publishedTime: post.created_at,
+      authors: [post.author],
+      ...(post.cover_image ? { images: [{ url: post.cover_image, alt: title }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      ...(post.cover_image ? { images: [post.cover_image] } : {}),
+    },
+  }
+}
+
 function formatDate(dateStr: string, locale: string): string {
   return new Intl.DateTimeFormat(locale, { day: '2-digit', month: 'long', year: 'numeric' }).format(new Date(dateStr))
 }
@@ -38,8 +81,46 @@ export default async function BlogPostPage({ params }: Props) {
   const post = await getPost(slug)
   if (!post) notFound()
 
+  const baseUrl = 'https://ascendtechglobal.com'
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt ?? post.title,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Ascend Tech Global',
+      url: baseUrl,
+    },
+    datePublished: post.created_at,
+    url: `${baseUrl}/${locale}/blog/${post.slug}`,
+    ...(post.cover_image ? { image: post.cover_image } : {}),
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${baseUrl}/${locale}` },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${baseUrl}/${locale}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `${baseUrl}/${locale}/blog/${post.slug}` },
+    ],
+  }
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#030712' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section className="relative overflow-hidden pt-32 pb-16">
         <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[60%]"
@@ -131,7 +212,7 @@ export default async function BlogPostPage({ params }: Props) {
             style={{ color: 'rgba(255,255,255,0.5)' }}>
             <ArrowLeft size={14} /> {t('backLink')}
           </Link>
-          <Link href="/contato" className="btn-orange inline-flex items-center gap-2 rounded-lg px-6 py-2.5 text-xs">
+          <Link href="/contato" className="btn-blue inline-flex items-center gap-2 rounded-lg px-6 py-2.5 text-xs">
             {locale === 'en' ? 'Talk to the team' : locale === 'es' ? 'Hablar con el equipo' : 'Falar com a equipe'}
           </Link>
         </div>

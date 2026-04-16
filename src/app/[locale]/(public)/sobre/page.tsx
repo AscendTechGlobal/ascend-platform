@@ -9,24 +9,35 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const baseUrl = 'https://ascendtechglobal.com'
-  const path = locale === 'pt-BR' ? '/pt-BR/sobre' : `/${locale}/sobre`
-  const url = `${baseUrl}${path}`
+  const url = `${baseUrl}/${locale}/sobre`
+  const title = 'Sobre | Ascend Tech Global'
+  const description =
+    'Conheça a Ascend Tech Global, empresa focada em automação, software, inteligência artificial e segurança para operações que precisam crescer com estrutura.'
 
   return {
-    title: 'Sobre | Ascend Tech Global',
-    description:
-      'Conheça a Ascend Tech Global, empresa focada em automação, software, inteligência artificial e segurança para operações que precisam crescer com estrutura.',
+    title,
+    description,
     alternates: {
       canonical: url,
+      languages: {
+        'pt-BR': `${baseUrl}/pt-BR/sobre`,
+        en: `${baseUrl}/en/sobre`,
+        es: `${baseUrl}/es/sobre`,
+        'x-default': `${baseUrl}/pt-BR/sobre`,
+      },
     },
     openGraph: {
-      title: 'Sobre | Ascend Tech Global',
-      description:
-        'Conheça a Ascend Tech Global, empresa focada em automação, software, inteligência artificial e segurança para operações que precisam crescer com estrutura.',
+      title,
+      description,
       url,
       siteName: 'Ascend Tech Global',
       locale,
       type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
     },
   }
 }

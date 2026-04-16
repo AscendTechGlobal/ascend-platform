@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -21,6 +22,46 @@ async function getProject(slug: string): Promise<Project | null> {
   return data
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, slug } = await params
+  const project = await getProject(slug)
+  if (!project) return {}
+
+  const baseUrl = 'https://ascendtechglobal.com'
+  const url = `${baseUrl}/${locale}/portfolio/${slug}`
+  const title = project.title
+  const description = project.short_description ?? project.title
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: {
+        'pt-BR': `${baseUrl}/pt-BR/portfolio/${slug}`,
+        en: `${baseUrl}/en/portfolio/${slug}`,
+        es: `${baseUrl}/es/portfolio/${slug}`,
+        'x-default': `${baseUrl}/pt-BR/portfolio/${slug}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: 'Ascend Tech Global',
+      locale,
+      type: 'website',
+      ...(project.cover_image ? { images: [{ url: project.cover_image, alt: title }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      ...(project.cover_image ? { images: [project.cover_image] } : {}),
+    },
+  }
+}
+
 export default async function ProjectPage({ params }: Props) {
   const { locale, slug } = await params
   setRequestLocale(locale)
@@ -30,8 +71,23 @@ export default async function ProjectPage({ params }: Props) {
   const project = await getProject(slug)
   if (!project) notFound()
 
+  const baseUrl = 'https://ascendtechglobal.com'
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${baseUrl}/${locale}` },
+      { '@type': 'ListItem', position: 2, name: 'Portfolio', item: `${baseUrl}/${locale}/portfolio` },
+      { '@type': 'ListItem', position: 3, name: project.title, item: `${baseUrl}/${locale}/portfolio/${project.slug}` },
+    ],
+  }
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#030712' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* HERO */}
       <section className="relative overflow-hidden pt-32 pb-16">
         <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[60%]"
@@ -60,7 +116,7 @@ export default async function ProjectPage({ params }: Props) {
           <div className="mb-6">
             {project.featured && (
               <span className="inline-block mb-3 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest"
-                style={{ background: 'rgba(245,158,11,0.15)', border: '1px solid rgba(245,158,11,0.3)', color: '#f59e0b' }}>
+                style={{ background: 'rgba(59,130,246,0.15)', border: '1px solid rgba(59,130,246,0.3)', color: '#3B82F6' }}>
                 {t('featuredBadge')}
               </span>
             )}
@@ -143,7 +199,7 @@ export default async function ProjectPage({ params }: Props) {
           <p className="mb-8 text-sm text-gray-400">
             {t('cta.description')}
           </p>
-          <Link href="/contato" className="btn-orange inline-flex items-center gap-2 rounded-lg px-8 py-3.5 text-sm">
+          <Link href="/contato" className="btn-blue inline-flex items-center gap-2 rounded-lg px-8 py-3.5 text-sm">
             {t('cta.button')}
           </Link>
         </div>

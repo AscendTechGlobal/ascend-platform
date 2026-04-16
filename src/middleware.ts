@@ -100,7 +100,7 @@ export async function middleware(req: NextRequest) {
   }
 
   // ④ Auth pages inside locale → redirect already-authenticated users to /admin
-  const isAuthPage = /^\/(pt-BR|en|es)\/(login|recuperar-senha)/.test(pathname)
+  const isAuthPage = /^\/(pt-BR|en|es)\/(login|recuperar-senha|redefinir-senha)/.test(pathname)
   if (isAuthPage) {
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -123,6 +123,6 @@ export async function middleware(req: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp4)$).*)',
   ],
 }

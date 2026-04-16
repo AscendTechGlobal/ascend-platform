@@ -2,14 +2,13 @@ import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
 import { createClient } from '@/lib/supabase/server'
 import Hero from '@/components/sections/Hero'
-import ProblemSolution from '@/components/sections/ProblemSolution'
+import PainPoints from '@/components/sections/PainPoints'
 import Services from '@/components/sections/Services'
-import Differentials from '@/components/sections/Differentials'
-import Audience from '@/components/sections/Audience'
+import SystemsVisual from '@/components/sections/SystemsVisual'
+import ProcessSteps from '@/components/sections/ProcessSteps'
 import Authority from '@/components/sections/Authority'
-import Results from '@/components/sections/Results'
+import Audience from '@/components/sections/Audience'
 import FinalCta from '@/components/sections/FinalCta'
-import About from '@/components/sections/About'
 import type { Service } from '@/types'
 import { getSiteSettings } from '@/lib/site-settings'
 
@@ -21,24 +20,47 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const baseUrl = 'https://ascendtechglobal.com'
-  const path = locale === 'pt-BR' ? '/pt-BR' : `/${locale}`
-  const url = `${baseUrl}${path}`
+  const url = `${baseUrl}/${locale}`
+
+  const titles: Record<string, string> = {
+    'pt-BR': 'Ascend Tech Global | Automação, IA e Sistemas Sob Medida',
+    en: 'Ascend Tech Global | Automation, AI and Custom Software',
+    es: 'Ascend Tech Global | Automatización, IA y Software a Medida',
+  }
+  const descriptions: Record<string, string> = {
+    'pt-BR':
+      'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+    en: 'Automation, artificial intelligence and software development for businesses that want to grow with efficiency, control and scale.',
+    es: 'Automatización, inteligencia artificial y desarrollo de sistemas para empresas que quieren crecer con eficiencia, control y escala.',
+  }
+
+  const title = titles[locale] ?? titles['pt-BR']
+  const description = descriptions[locale] ?? descriptions['pt-BR']
 
   return {
-    title: 'Ascend Tech Global | Automação, IA e Sistemas Sob Medida',
-    description:
-      'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+    title,
+    description,
     alternates: {
       canonical: url,
+      languages: {
+        'pt-BR': `${baseUrl}/pt-BR`,
+        en: `${baseUrl}/en`,
+        es: `${baseUrl}/es`,
+        'x-default': `${baseUrl}/pt-BR`,
+      },
     },
     openGraph: {
-      title: 'Ascend Tech Global | Automação, IA e Sistemas Sob Medida',
-      description:
-        'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+      title,
+      description,
       url,
       siteName: 'Ascend Tech Global',
       locale,
       type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
     },
   }
 }
@@ -68,42 +90,78 @@ export default async function HomePage({
     getSiteSettings(),
   ])
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Ascend Tech Global',
+    url: 'https://ascendtechglobal.com',
+    logo: 'https://ascendtechglobal.com/favicon.ico',
+    description:
+      'Automação, inteligência artificial e desenvolvimento de sistemas para empresas que querem crescer com eficiência, controle e escala.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Porto Alegre',
+      addressRegion: 'RS',
+      addressCountry: 'BR',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      availableLanguage: ['Portuguese', 'English', 'Spanish'],
+    },
+    sameAs: [
+      settings?.social_links?.linkedin ?? '',
+      settings?.social_links?.instagram ?? '',
+    ].filter(Boolean),
+  }
+
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Ascend Tech Global',
+    url: 'https://ascendtechglobal.com',
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <section id="hero">
         <Hero settings={settings} />
       </section>
 
-      <section id="problem-solution">
-        <ProblemSolution />
+      <section id="pain-points">
+        <PainPoints />
       </section>
 
       <section id="services">
         <Services services={services} />
       </section>
 
-      <section id="differentials">
-        <Differentials />
+      <section id="systems-visual">
+        <SystemsVisual />
       </section>
 
-      <section id="audience">
-        <Audience />
+      <section id="process-steps">
+        <ProcessSteps />
       </section>
 
       <section id="authority">
         <Authority />
       </section>
 
-      <section id="results">
-        <Results />
+      <section id="audience">
+        <Audience />
       </section>
 
       <section id="final-cta">
         <FinalCta />
-      </section>
-
-      <section id="about">
-        <About settings={settings} />
       </section>
     </>
   )
