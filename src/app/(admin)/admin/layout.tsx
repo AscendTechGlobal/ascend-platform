@@ -109,7 +109,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                     className={[
                       'flex h-10 w-10 items-center justify-center rounded-[1rem] border transition-all duration-200',
                       active
-                        ? 'border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#0ea5e9_0%,#8b5cf6_54%,#ec4899_100%)] text-white'
+                        ? 'border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#3B82F6_0%,#2563eb_54%,#b45309_100%)] text-white'
                         : 'border-white/8 bg-white/[0.03] text-white/55 group-hover:text-white/85',
                     ].join(' ')}
                   >
@@ -132,7 +132,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <div className="border-t border-white/8 px-4 py-4">
             <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-4">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#0ea5e9_0%,#8b5cf6_54%,#ec4899_100%)] text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#3B82F6_0%,#2563eb_54%,#b45309_100%)] text-sm font-semibold text-white">
                   A
                 </div>
                 <div className="min-w-0">

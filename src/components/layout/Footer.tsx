@@ -104,7 +104,7 @@ function WhatsAppFAB({ ariaLabel, href }: { ariaLabel: string; href: string }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel}
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-white/14 bg-[linear-gradient(135deg,#0ea5e9_0%,#8b5cf6_55%,#ec4899_100%)] text-white shadow-[0_18px_36px_rgba(88,28,135,0.34)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_22px_46px_rgba(88,28,135,0.42)]"
+      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-white/14 bg-[linear-gradient(135deg,#3B82F6_0%,#2563eb_55%,#b45309_100%)] text-white shadow-[0_18px_36px_rgba(88,28,135,0.34)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_22px_46px_rgba(88,28,135,0.42)]"
     >
       <MessageCircle className="h-6 w-6" />
     </a>
@@ -176,11 +176,9 @@ export function Footer({ settings }: { settings?: SiteSettings | null }) {
     <>
       <WhatsAppFAB ariaLabel={t('whatsappAria')} href={whatsappHref} />
 
-      <footer className="relative overflow-hidden pb-6 pt-10 text-white">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(14,165,233,0.1),transparent_28%),radial-gradient(circle_at_80%_18%,rgba(139,92,246,0.1),transparent_28%)]" />
+      <footer className="relative bg-[#0B0F14] overflow-hidden pb-6 pt-10 text-white">
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="glow-card rounded-[2rem] p-8 sm:p-10">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6">
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -190,7 +188,7 @@ export function Footer({ settings }: { settings?: SiteSettings | null }) {
             >
               <div>
                 <Link href="/" className="inline-flex items-center gap-3 select-none">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.15),rgba(255,255,255,0.04)),linear-gradient(135deg,#0ea5e9_0%,#8b5cf6_52%,#ec4899_100%)] text-white shadow-[0_12px_30px_rgba(88,28,135,0.22)]">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.15),rgba(255,255,255,0.04)),linear-gradient(135deg,#3B82F6_0%,#2563eb_52%,#b45309_100%)] text-white shadow-[0_12px_30px_rgba(88,28,135,0.22)]">
                     <ArrowUpIcon className="h-5 w-5" />
                   </span>
                   <BrandWordmark className="text-xl" />
@@ -284,7 +282,6 @@ export function Footer({ settings }: { settings?: SiteSettings | null }) {
                 {t('madeBy')} <span className="font-medium text-white/62">{t('madeByHighlight')}</span>
               </p>
             </div>
-          </div>
         </div>
       </footer>
     </>

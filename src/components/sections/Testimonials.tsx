@@ -65,8 +65,8 @@ function StarRating({ rating }: { rating: number }) {
         <Star
           key={index}
           className="h-3.5 w-3.5"
-          fill={index < rating ? '#fbbf24' : 'transparent'}
-          stroke={index < rating ? '#fbbf24' : 'rgba(255,255,255,0.2)'}
+          fill={index < rating ? '#3b82f6' : 'transparent'}
+          stroke={index < rating ? '#3b82f6' : 'rgba(255,255,255,0.2)'}
           strokeWidth={1.4}
         />
       ))}
@@ -78,7 +78,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
     <motion.article variants={cardVariants} className="premium-panel rounded-[1.8rem] p-6">
       <div className="flex items-center justify-between gap-4">
-        <div className="flex h-11 w-11 items-center justify-center rounded-[1rem] border border-white/12 bg-white/[0.04] text-sky-200">
+        <div className="flex h-11 w-11 items-center justify-center rounded-[1rem] border border-white/12 bg-white/[0.04] text-blue-400">
           <Quote className="h-5 w-5" />
         </div>
         <StarRating rating={testimonial.rating} />
@@ -112,7 +112,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
     testimonials && testimonials.length > 0 ? testimonials : mockTestimonials
 
   return (
-    <section className="section-shell py-24 sm:py-28">
+    <section className="section-shell bg-[linear-gradient(to_bottom,#0B0F14_0%,#0F1720_8%,#0F1720_92%,#0B0F14_100%)] py-24 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -121,7 +121,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title mt-6">
             {t('title')} <span className="highlight">{t('titleHighlight')}</span>
           </h2>

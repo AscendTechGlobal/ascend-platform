@@ -86,7 +86,7 @@ function BlogCard({ post, readMoreLabel }: { post: BlogPost; readMoreLabel: stri
   return (
     <motion.article variants={cardVariants} className="premium-panel rounded-[1.8rem] p-6">
       <div className="flex items-center gap-2 text-white/55">
-        <Calendar className="h-3.5 w-3.5 text-sky-300" />
+        <Calendar className="h-3.5 w-3.5 text-blue-500" />
         <span className="text-[0.7rem] font-semibold uppercase tracking-[0.24em]">
           {formatDate(post.created_at)}
         </span>
@@ -112,7 +112,7 @@ function BlogCard({ post, readMoreLabel }: { post: BlogPost; readMoreLabel: stri
 
       <Link
         href={`/blog/${post.slug}`}
-        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-sky-200 transition-colors duration-200 hover:text-white"
+        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-blue-400 transition-colors duration-200 hover:text-white"
       >
         {readMoreLabel}
         <ArrowRight className="h-4 w-4" />
@@ -139,7 +139,7 @@ export default function BlogSection({ posts }: BlogSectionProps) {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title mt-6">
             {t('title')} <span className="highlight">{t('titleHighlight')}</span>
           </h2>
@@ -167,7 +167,7 @@ export default function BlogSection({ posts }: BlogSectionProps) {
           transition={{ duration: 0.45, delay: 0.12 }}
           className="mt-12 flex justify-center"
         >
-          <Link href="/blog" className="btn-cyan-outline rounded-2xl px-7 py-3 text-sm">
+          <Link href="/blog" className="btn-blue-outline rounded-2xl px-7 py-3 text-sm">
             {t('viewAll')}
             <ArrowRight className="h-4 w-4" />
           </Link>

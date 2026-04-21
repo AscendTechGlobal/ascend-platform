@@ -98,7 +98,7 @@ export default function About({ settings }: { settings?: SiteSettings | null }) 
           transition={{ duration: 0.55 }}
           className="max-w-2xl"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title mt-6">
             {t('title')} <span className="highlight">{t('titleHighlight')}</span>
           </h2>
@@ -114,14 +114,14 @@ export default function About({ settings }: { settings?: SiteSettings | null }) 
                 key={item}
                 className="premium-panel flex items-start gap-3 rounded-[1.35rem] px-4 py-3.5"
               >
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-sky-300" />
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue-500" />
                 <p className="text-sm leading-7 text-white/78">{item}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-8">
-            <Link href="/sobre" className="btn-orange rounded-2xl px-7 py-3.5 text-sm">
+            <Link href="/sobre" className="btn-blue rounded-2xl px-7 py-3.5 text-sm">
               {t('cta')}
             </Link>
           </div>

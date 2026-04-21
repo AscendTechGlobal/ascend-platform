@@ -146,7 +146,7 @@ export default function ServicosAdminPage() {
         </div>
         <button onClick={openNew}
           className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold"
-          style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', boxShadow: '0 4px 20px rgba(245,158,11,0.3)' }}>
+          style={{ background: 'linear-gradient(135deg, #3B82F6, #2563eb)', color: 'white', boxShadow: '0 4px 20px rgba(59,130,246,0.3)' }}>
           <Plus size={15} /> Novo Serviço
         </button>
       </div>
@@ -197,7 +197,7 @@ export default function ServicosAdminPage() {
             <button onClick={closeForm} className="px-4 py-2 rounded-lg text-xs font-semibold" style={{ border: '1px solid rgba(255,255,255,0.12)', color: 'rgba(255,255,255,0.55)' }}>Cancelar</button>
             <button onClick={save} disabled={saving}
               className="flex items-center gap-2 px-5 py-2 rounded-lg text-xs font-bold"
-              style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', opacity: saving ? 0.7 : 1 }}>
+              style={{ background: 'linear-gradient(135deg, #3B82F6, #2563eb)', color: 'white', opacity: saving ? 0.7 : 1 }}>
               {saving ? <RefreshCw size={12} className="animate-spin" /> : <Save size={12} />}
               {saving ? 'Salvando...' : 'Salvar'}
             </button>

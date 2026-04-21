@@ -38,9 +38,9 @@ const basePillars = [
     label: 'Estrutura',
     title: 'Tecnologia aplicada com critério',
     text: 'Cada solução é pensada para reduzir esforço manual, aumentar produtividade, organizar processos e permitir crescimento com estrutura.',
-    color: '#f59e0b',
-    border: 'rgba(245,158,11,0.2)',
-    bg: 'rgba(245,158,11,0.05)',
+    color: '#3B82F6',
+    border: 'rgba(59,130,246,0.2)',
+    bg: 'rgba(59,130,246,0.05)',
   },
   {
     icon: Heart,
@@ -405,7 +405,7 @@ export default function SobreContent() {
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
-          style={{ background: 'radial-gradient(ellipse at 80% 50%, rgba(245,158,11,0.04) 0%, transparent 55%)' }}
+          style={{ background: 'radial-gradient(ellipse at 80% 50%, rgba(59,130,246,0.04) 0%, transparent 55%)' }}
         />
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -638,7 +638,7 @@ export default function SobreContent() {
             <motion.div variants={fadeUp}>
               <Link
                 href="/contato"
-                className="btn-orange inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm"
+                className="btn-blue inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm"
               >
                 {copy.ctaButton}
                 <ArrowRight size={16} />

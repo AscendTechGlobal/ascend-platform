@@ -334,7 +334,7 @@ export default function ContatoContent({ settings }: { settings?: SiteSettings |
         <div aria-hidden className="pointer-events-none absolute inset-0"
           style={{ background: 'radial-gradient(ellipse at 30% 50%, rgba(0,212,255,0.05) 0%, transparent 55%)' }} />
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ background: 'radial-gradient(ellipse at 75% 50%, rgba(245,158,11,0.03) 0%, transparent 50%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 75% 50%, rgba(59,130,246,0.03) 0%, transparent 50%)' }} />
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
@@ -420,7 +420,7 @@ export default function ContatoContent({ settings }: { settings?: SiteSettings |
 
                   <button type="submit"
                     disabled={submitStatus === 'loading' || submitStatus === 'success'}
-                    className="btn-orange inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-sm disabled:cursor-not-allowed disabled:opacity-60">
+                    className="btn-blue inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-sm disabled:cursor-not-allowed disabled:opacity-60">
                     {submitStatus === 'loading' ? (
                       <><Loader2 size={16} className="animate-spin" />{t('form.submitting')}</>
                     ) : submitStatus === 'success' ? (

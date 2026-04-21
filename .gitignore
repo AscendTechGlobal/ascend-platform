@@ -40,3 +40,10 @@ yarn-error.log*
 *.seed
 *.tsbuildinfo
 next-env.d.ts
+
+# agent
+.agent/
+
+# python
+__pycache__/
+*.pyc

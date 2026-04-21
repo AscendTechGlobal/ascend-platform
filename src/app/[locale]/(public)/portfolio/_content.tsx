@@ -7,7 +7,7 @@ import { Link } from '@/i18n/navigation'
 import { ExternalLink, ChevronRight, ArrowRight } from 'lucide-react'
 import type { Project } from '@/types'
 
-const ACCENT_COLORS = ['#00d4ff', '#f59e0b']
+const ACCENT_COLORS = ['#00d4ff', '#3B82F6']
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 36 },
@@ -85,7 +85,7 @@ function ProjectCard({ project, index, featuredLabel, viewProjectLabel }: { proj
         <p className="flex-1 text-xs leading-relaxed text-gray-400">{project.short_description}</p>
 
         <Link href={`/portfolio/${project.slug}`}
-          className="btn-cyan-outline mt-auto inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs"
+          className="btn-blue-outline mt-auto inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs"
           style={{ borderColor: `${accentColor}50`, color: accentColor }}>
           {viewProjectLabel}
           <ExternalLink size={12} />
@@ -184,7 +184,7 @@ export default function PortfolioContent({ projects }: { projects: Project[] }) 
               {t('cta.description')}
             </motion.p>
             <motion.div variants={fadeUp}>
-              <Link href="/contato" className="btn-orange inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm">
+              <Link href="/contato" className="btn-blue inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm">
                 {t('cta.button')} <ArrowRight size={16} />
               </Link>
             </motion.div>

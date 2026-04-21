@@ -53,9 +53,9 @@ export default function ProjetosClient({ initialProjects }: { initialProjects: P
           href="/admin/projetos/novo"
           className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold transition-all duration-200"
           style={{
-            background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+            background: 'linear-gradient(135deg, #3B82F6, #2563eb)',
             color: 'white',
-            boxShadow: '0 4px 20px rgba(245,158,11,0.3)',
+            boxShadow: '0 4px 20px rgba(59,130,246,0.3)',
           }}
         >
           <Plus size={15} /> Novo Projeto
@@ -113,7 +113,7 @@ export default function ProjetosClient({ initialProjects }: { initialProjects: P
                   {project.featured && (
                     <span
                       className="flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full"
-                      style={{ background: 'rgba(245,158,11,0.85)', color: '#030712' }}
+                      style={{ background: 'rgba(59,130,246,0.85)', color: '#030712' }}
                     >
                       <Star size={8} /> Destaque
                     </span>

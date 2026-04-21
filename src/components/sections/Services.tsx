@@ -132,7 +132,7 @@ export default function Services({ services }: { services?: Service[] }) {
         }))
 
   return (
-    <section className="section-shell py-24 sm:py-28">
+    <section className="section-shell bg-[#0B0F14]  py-24 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -141,7 +141,7 @@ export default function Services({ services }: { services?: Service[] }) {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title mt-6">
             {t('title')} <span className="highlight">{t('titleHighlight')}</span>
           </h2>
@@ -163,7 +163,7 @@ export default function Services({ services }: { services?: Service[] }) {
               variants={cardVariants}
               className="premium-panel flex h-full flex-col rounded-[1.8rem] p-6"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-[1.15rem] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04)),linear-gradient(135deg,rgba(14,165,233,0.18),rgba(139,92,246,0.12),rgba(236,72,153,0.12))] text-white shadow-[0_12px_26px_rgba(4,9,28,0.24)]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-[1.15rem] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04)),linear-gradient(135deg,rgba(59,130,246,0.18),rgba(217,119,6,0.12),rgba(180,83,9,0.12))] text-white shadow-[0_12px_26px_rgba(4,9,28,0.24)]">
                 <Icon className="h-6 w-6" strokeWidth={1.8} />
               </div>
 
@@ -178,7 +178,7 @@ export default function Services({ services }: { services?: Service[] }) {
 
               <Link
                 href="/servicos"
-                className="btn-cyan-outline mt-8 inline-flex w-fit rounded-2xl px-4 py-2.5 text-xs"
+                className="btn-blue-outline mt-8 inline-flex w-fit rounded-2xl px-4 py-2.5 text-xs"
               >
                 {t('learnMore')}
                 <ArrowRight className="h-3.5 w-3.5" />

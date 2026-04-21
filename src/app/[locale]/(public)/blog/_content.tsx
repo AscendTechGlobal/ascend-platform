@@ -8,7 +8,7 @@ import { Link } from '@/i18n/navigation'
 import { Calendar, ArrowRight, ChevronRight, Tag } from 'lucide-react'
 import type { BlogPost } from '@/types'
 
-const ACCENT_COLORS = ['#00d4ff', '#f59e0b']
+const ACCENT_COLORS = ['#00d4ff', '#3B82F6']
 
 function formatDate(dateStr: string, locale: string): string {
   return new Intl.DateTimeFormat(locale, { day: '2-digit', month: 'long', year: 'numeric' }).format(new Date(dateStr))
@@ -61,7 +61,7 @@ function FeaturedCard({
           </svg>
         )}
         <div className="absolute top-4 left-4 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-widest"
-          style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.25), rgba(245,158,11,0.15))', border: '1px solid rgba(245,158,11,0.4)', color: '#f59e0b' }}>
+          style={{ background: 'linear-gradient(135deg, rgba(59,130,246,0.25), rgba(59,130,246,0.15))', border: '1px solid rgba(59,130,246,0.4)', color: '#3B82F6' }}>
           {featuredLabel}
         </div>
       </div>
@@ -268,7 +268,7 @@ export default function BlogContent({ posts }: { posts: BlogPost[] }) {
               {t('cta.description')}
             </motion.p>
             <motion.div variants={fadeUp}>
-              <Link href="/contato" className="btn-orange inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm">
+              <Link href="/contato" className="btn-blue inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm">
                 {t('cta.button')} <ArrowRight size={16} />
               </Link>
             </motion.div>

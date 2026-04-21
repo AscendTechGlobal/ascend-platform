@@ -56,9 +56,9 @@ export default function BlogClient({ initialPosts }: { initialPosts: BlogPost[] 
           href="/admin/blog/novo"
           className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-bold transition-all duration-200"
           style={{
-            background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+            background: 'linear-gradient(135deg, #3B82F6, #2563eb)',
             color: 'white',
-            boxShadow: '0 4px 20px rgba(245,158,11,0.3)',
+            boxShadow: '0 4px 20px rgba(59,130,246,0.3)',
           }}
         >
           <Plus size={15} /> Novo Post
@@ -118,7 +118,7 @@ export default function BlogClient({ initialPosts }: { initialPosts: BlogPost[] 
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2">
                       {post.featured && (
-                        <Star size={11} style={{ color: '#f59e0b', flexShrink: 0 }} />
+                        <Star size={11} style={{ color: '#3B82F6', flexShrink: 0 }} />
                       )}
                       <span className="font-semibold text-white">{post.title}</span>
                     </div>

@@ -65,7 +65,7 @@ const baseServices = [
       'Arquitetura escalável',
       'Soluções orientadas à operação real',
     ],
-    color: '#f59e0b',
+    color: '#3B82F6',
   },
   {
     id: 'ai',
@@ -101,7 +101,7 @@ const baseServices = [
       'Eliminação de duplicidade',
       'Fluxos operacionais integrados',
     ],
-    color: '#f59e0b',
+    color: '#3B82F6',
   },
   {
     id: 'cybersecurity',
@@ -427,7 +427,7 @@ export default function ServicosContent() {
 
                 <Link
                   href="/contato"
-                  className="btn-cyan-outline mt-auto inline-flex w-fit items-center gap-2 rounded-lg px-6 py-2.5 text-xs"
+                  className="btn-blue-outline mt-auto inline-flex w-fit items-center gap-2 rounded-lg px-6 py-2.5 text-xs"
                   style={{ borderColor: `${color}50`, color }}
                 >
                   {tc('requestQuote')}
@@ -442,7 +442,7 @@ export default function ServicosContent() {
       {/* ── PROCESS ──────────────────────────────────────── */}
       <section className="relative py-20" style={{ backgroundColor: '#030712' }}>
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{ background: 'radial-gradient(ellipse at 50% 100%, rgba(245,158,11,0.04) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 50% 100%, rgba(59,130,246,0.04) 0%, transparent 55%)' }} />
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -492,7 +492,7 @@ export default function ServicosContent() {
                   </div>
                   <span
                     className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full text-[11px] font-black"
-                    style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', boxShadow: '0 0 12px rgba(245,158,11,0.5)' }}
+                    style={{ background: 'linear-gradient(135deg, #3B82F6, #2563eb)', color: 'white', boxShadow: '0 0 12px rgba(59,130,246,0.5)' }}
                   >
                     {number}
                   </span>
@@ -559,7 +559,7 @@ export default function ServicosContent() {
               {copy.ctaDescription}
             </motion.p>
             <motion.div variants={fadeUp}>
-              <Link href="/contato" className="btn-orange inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm">
+              <Link href="/contato" className="btn-blue inline-flex items-center gap-2 rounded-lg px-10 py-4 text-sm">
                 {copy.ctaButton}
                 <ArrowRight size={16} />
               </Link>

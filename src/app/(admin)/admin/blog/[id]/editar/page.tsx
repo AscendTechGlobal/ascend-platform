@@ -29,7 +29,7 @@ type FormData = z.infer<typeof schema>
 function FieldLabel({ children, required }: { children: React.ReactNode; required?: boolean }) {
   return (
     <label className="block text-[11px] font-semibold uppercase tracking-wider mb-1.5" style={{ color: 'rgba(255,255,255,0.5)' }}>
-      {children} {required && <span style={{ color: '#f59e0b' }}>*</span>}
+      {children} {required && <span style={{ color: '#3B82F6' }}>*</span>}
     </label>
   )
 }
@@ -207,7 +207,7 @@ export default function EditarPostPage() {
           </Link>
           <button type="submit" disabled={saving}
             className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold"
-            style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)', color: 'white', opacity: saving ? 0.7 : 1 }}>
+            style={{ background: 'linear-gradient(135deg, #3B82F6, #2563eb)', color: 'white', opacity: saving ? 0.7 : 1 }}>
             {saving ? <RefreshCw size={14} className="animate-spin" /> : <Save size={14} />}
             {saving ? 'Salvando...' : 'Atualizar Post'}
           </button>

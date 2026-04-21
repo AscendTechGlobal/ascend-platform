@@ -25,7 +25,6 @@
     "confirm": "Confirmar",
     "home": "Início"
   },
-
   "nav": {
     "home": "Início",
     "about": "Sobre",
@@ -38,7 +37,6 @@
     "closeMenu": "Fechar menu",
     "menuTitle": "Menu de Navegação"
   },
-
   "hero": {
     "badge": "Parceiro Tech Global",
     "title": "Ascend",
@@ -56,7 +54,6 @@
     "stat3Value": "5+",
     "stat3Label": "Anos de experiência"
   },
-
   "problemSolution": {
     "problemEyebrow": "O Desafio",
     "problemTitle": "Empresas perdem eficiência todos os dias com processos manuais e operações desorganizadas.",
@@ -67,37 +64,31 @@
     "solutionParagraph1": "Desenvolvemos soluções sob medida para automatizar processos, integrar sistemas, organizar fluxos e criar uma base tecnológica preparada para crescer.",
     "solutionParagraph2": "Não entregamos apenas tecnologia. Entregamos soluções que resolvem problemas reais."
   },
-
   "services": {
     "eyebrow": "O Que Fazemos",
-    "title": "NOSSOS",
-    "titleHighlight": "SERVIÇOS",
-    "subtitle": "Soluções tecnológicas aplicadas para aumentar eficiência, reduzir retrabalho e gerar crescimento com estrutura.",
+    "title": "FOCO EM",
+    "titleHighlight": "RESULTADO",
+    "subtitle": "Esqueça serviços engessados. Nós implementamos soluções que desbloqueiam a verdadeira eficiência e escalam.",
     "learnMore": "Saiba Mais",
     "items": [
-  {
-    "title": "Automação de processos",
-    "description": "Eliminamos tarefas manuais e repetitivas, reduzindo erros e aumentando a produtividade da operação."
-  },
-  {
-    "title": "Desenvolvimento de sistemas",
-    "description": "Criamos sistemas personalizados, adaptados à realidade do negócio, com foco em eficiência e escalabilidade."
-  },
-  {
-    "title": "Inteligência Artificial aplicada",
-    "description": "Integramos IA aos processos para otimizar decisões, atendimento e produtividade."
-  },
-  {
-    "title": "Integrações e APIs",
-    "description": "Conectamos ferramentas e sistemas para criar fluxos de trabalho unificados e eficientes."
-  },
-  {
-    "title": "Cibersegurança e auditoria",
-    "description": "Analisamos sistemas, identificamos vulnerabilidades e implementamos práticas de segurança para proteger dados, operações e garantir conformidade."
+      {
+        "title": "Automação Extrema",
+        "description": "Remova gargalos manuais instalando bots e scripts que rodam 24/7 com precisão absoluta."
+      },
+      {
+        "title": "Integração Fluida",
+        "description": "Conectamos todo o seu ecossistema digital. Ferramentas, CRMs e ERPs se falando em tempo real."
+      },
+      {
+        "title": "Sistemas Escaláveis",
+        "description": "Software focado em reduzir custos e preparar sua estrutura tecnológica para volumes gigantes de operação."
+      },
+      {
+        "title": "Inteligência Operacional",
+        "description": "Visão analítica, dashboards estruturados e inteligência artificial antecipando problemas."
       }
     ]
   },
-
   "differentials": {
     "eyebrow": "Diferencial",
     "title": "Tecnologia aplicada à operação real",
@@ -105,27 +96,23 @@
     "paragraph2": "Entendemos o problema, estruturamos a solução e entregamos tecnologia que funciona no dia a dia.",
     "paragraph3": "Cada projeto é pensado para gerar resultado, não apenas para parecer bonito."
   },
-
   "audience": {
-    "eyebrow": "Para Quem É",
-    "title": "Soluções para quem precisa crescer com estrutura",
-    "description": "Atendemos empresas, escritórios e profissionais que precisam organizar a operação e ganhar escala com mais eficiência.",
+    "eyebrow": "Para Quem Funciona",
+    "title": "Seu negócio está limitado pela sua infraestrutura atual?",
+    "description": "Sem estrutura tecnológica, escalar se torna impossível.",
+    "closingLine": "É exatamente isso que resolvemos.",
     "items": [
-      "Organizar processos",
-      "Reduzir trabalho manual",
-      "Ganhar eficiência operacional",
-      "Escalar sem aumentar equipe",
-      "Profissionalizar a operação"
+      "Dependência de planilhas trava sua operação.",
+      "Sua operação não acompanha o crescimento.",
+      "Custos altos por falta de automação."
     ]
   },
-
   "authority": {
     "eyebrow": "Autoridade",
     "title": "Experiência prática aplicada a cenários reais",
     "paragraph1": "Mais de 5 anos de experiência prática em tecnologia, automação e segurança aplicadas a cenários reais.",
     "paragraph2": "Utilizamos tecnologias modernas, arquitetura escalável e boas práticas de desenvolvimento para garantir performance, segurança e crescimento contínuo."
   },
-
   "results": {
     "eyebrow": "Impacto",
     "title": "O que muda quando a operação ganha estrutura",
@@ -138,15 +125,14 @@
       "Base preparada para crescimento"
     ]
   },
-
   "finalCta": {
     "eyebrow": "Próximo Passo",
-    "title": "Sua operação pode ser muito mais eficiente do que é hoje.",
-    "description": "Solicite uma análise gratuita e descubra onde estão os gargalos do seu negócio.",
-    "primaryButton": "Solicitar diagnóstico",
-    "secondaryButton": "Falar com especialista"
+    "title": "Chegou a hora de transformar sua operação em um sistema realmente escalável.",
+    "description": "Solicite um diagnóstico e descubra exatamente onde sua operação está travando — e como resolver.",
+    "primaryButton": "Solicitar Diagnóstico Gratuito",
+    "secondaryButton": "Ver como funciona",
+    "trust": "Sem compromisso • Resposta em até 24h"
   },
-
   "about": {
     "eyebrow": "Quem Somos",
     "title": "SOBRE A ASCEND",
@@ -158,8 +144,6 @@
     "bullet3": "Atuação consultiva da estratégia à implementação",
     "cta": "Conheça Nossa História"
   },
-
-
   "whyChooseUs": {
     "eyebrow": "Nossos Diferenciais",
     "title": "POR QUE NOS",
@@ -182,7 +166,6 @@
       "description": "Um time de profissionais de tecnologia experientes e dedicados em quem você pode confiar."
     }
   },
-
   "portfolio": {
     "eyebrow": "Nosso Trabalho",
     "title": "NOSSO",
@@ -215,7 +198,6 @@
       }
     }
   },
-
   "testimonials": {
     "eyebrow": "Depoimentos",
     "title": "O QUE NOSSOS",
@@ -223,7 +205,6 @@
     "subtitle": "A satisfação dos nossos clientes é nossa maior conquista. Veja o que eles têm a dizer sobre os resultados que alcançamos juntos.",
     "trustBadge": "Avaliação média de 5.0 com base em 30+ clientes satisfeitos"
   },
-
   "blog": {
     "eyebrow": "Conhecimento & Inovação",
     "title": "BLOG &",
@@ -245,7 +226,6 @@
       "button": "Falar com Especialista"
     }
   },
-
   "contact": {
     "eyebrow": "Entre em Contato",
     "title": "FALE COM",
@@ -281,14 +261,12 @@
       "responseTime": "Tempo médio de resposta: menos de 24h"
     }
   },
-
   "faq": {
     "eyebrow": "Perguntas Frequentes",
     "title": "DÚVIDAS",
     "titleHighlight": "FREQUENTES",
     "subtitle": "Respondemos as principais dúvidas sobre nossos serviços, processos e tecnologias."
   },
-
   "footer": {
     "tagline": "Elevamos negócios com tecnologia de ponta, inovação estratégica e soluções digitais de alta performance.",
     "company": "Empresa",
@@ -312,7 +290,6 @@
       "cloud": "Soluções em Nuvem"
     }
   },
-
   "auth": {
     "login": {
       "title": "Acesse sua conta",
@@ -367,7 +344,6 @@
       }
     }
   },
-
   "admin": {
     "title": "Painel Administrativo",
     "online": "Sistema Online",

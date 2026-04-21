@@ -139,14 +139,13 @@
   },
   "audience": {
     "eyebrow": "Para Quién Es",
-    "title": "Soluciones para quienes necesitan crecer con estructura",
-    "description": "Atendemos empresas, despachos y profesionales que necesitan organizar la operación y ganar escala con más eficiencia.",
+    "title": "¿Tu negocio está limitado por su infraestructura actual?",
+    "description": "Sin una base tecnológica sólida, escalar se vuelve imposible.",
+    "closingLine": "Eso es exactamente lo que resolvemos.",
     "items": [
-      "Organizar procesos",
-      "Reducir trabajo manual",
-      "Ganar eficiencia operativa",
-      "Escalar sin aumentar el equipo",
-      "Profesionalizar la operación"
+      "La dependencia de planillas bloquea tu operación.",
+      "Tu operación no acompaña el crecimiento.",
+      "Costos altos por falta de automatización."
     ]
   },
   "authority": {

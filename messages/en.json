@@ -119,14 +119,13 @@
   },
   "audience": {
     "eyebrow": "Who It Is For",
-    "title": "Solutions for companies that need to grow with structure",
-    "description": "We serve companies, firms and professionals who need to organize operations and gain scale with more efficiency.",
+    "title": "Is your business being held back by its current infrastructure?",
+    "description": "Without a solid tech foundation, scaling becomes impossible.",
+    "closingLine": "That's exactly what we solve.",
     "items": [
-      "Organize processes",
-      "Reduce manual work",
-      "Gain operational efficiency",
-      "Scale without increasing headcount",
-      "Professionalize operations"
+      "Spreadsheet dependency blocks your operation.",
+      "Your operation can't keep up with growth.",
+      "High costs due to lack of automation."
     ]
   },
   "authority": {

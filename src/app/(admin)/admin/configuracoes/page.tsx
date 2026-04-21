@@ -384,9 +384,9 @@ export default function ConfiguracoesPage() {
             disabled={saving}
             className="flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-bold transition-all"
             style={{
-              background: 'linear-gradient(135deg, #f59e0b, #d97706)',
+              background: 'linear-gradient(135deg, #3B82F6, #2563eb)',
               color: 'white',
-              boxShadow: saving ? 'none' : '0 4px 20px rgba(245,158,11,0.3)',
+              boxShadow: saving ? 'none' : '0 4px 20px rgba(59,130,246,0.3)',
               opacity: saving ? 0.7 : 1,
             }}
           >

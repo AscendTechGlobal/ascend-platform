@@ -143,7 +143,7 @@ function ProjectCard({ project, ctaLabel }: { project: Project; ctaLabel: string
         className="relative h-48 w-full flex items-center justify-center"
         style={{
           background:
-            'radial-gradient(circle at 20% 10%, rgba(14,165,233,0.15), transparent 24%), linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(10,14,28,0.92) 100%)',
+            'radial-gradient(circle at 20% 10%, rgba(59,130,246,0.15), transparent 24%), linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(10,14,28,0.92) 100%)',
           borderBottom: '1px solid rgba(255,255,255,0.08)',
         }}
       >
@@ -192,7 +192,7 @@ function ProjectCard({ project, ctaLabel }: { project: Project; ctaLabel: string
         )}
 
         {/* Corner accent */}
-        <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_14px_rgba(125,211,252,0.8)]" />
+        <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-blue-300 shadow-[0_0_14px_rgba(125,211,252,0.8)]" />
       </div>
 
       {/* Body */}
@@ -227,7 +227,7 @@ function ProjectCard({ project, ctaLabel }: { project: Project; ctaLabel: string
         {/* CTA */}
         <Link
           href={project.url ?? `/portfolio/${project.slug}`}
-          className="btn-cyan-outline mt-auto inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2.5 text-xs"
+          className="btn-blue-outline mt-auto inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2.5 text-xs"
         >
           {ctaLabel}
           <ExternalLink size={12} />
@@ -258,7 +258,7 @@ export default function Portfolio({ projects }: PortfolioProps) {
           transition={{ duration: 0.6 }}
           className="mx-auto mb-4 max-w-3xl text-center"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title">
             {t('title')} <span className="highlight">{t('titleHighlight')}</span>
           </h2>
@@ -297,7 +297,7 @@ export default function Portfolio({ projects }: PortfolioProps) {
         >
           <Link
             href="/portfolio"
-            className="btn-orange inline-flex items-center gap-2 rounded-2xl px-8 py-3.5 text-sm"
+            className="btn-blue inline-flex items-center gap-2 rounded-2xl px-8 py-3.5 text-sm"
           >
             {t('viewAll')}
             <svg

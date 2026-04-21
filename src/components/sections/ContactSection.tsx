@@ -117,7 +117,7 @@ export default function ContactSection({ settings }: { settings?: SiteSettings |
   }
 
   return (
-    <section id="contact" className="section-shell py-24 sm:py-28">
+    <section id="contact" className="section-shell bg-[#0B0F14]  py-24 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fadeUp}
@@ -126,7 +126,7 @@ export default function ContactSection({ settings }: { settings?: SiteSettings |
           viewport={{ once: true, margin: '-80px' }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title mt-6">
             {t('title')} <span className="highlight">{t('titleHighlight')}</span>
           </h2>
@@ -237,7 +237,7 @@ export default function ContactSection({ settings }: { settings?: SiteSettings |
                 <button
                   type="submit"
                   disabled={submitStatus === 'loading'}
-                  className="btn-orange inline-flex rounded-2xl px-7 py-3.5 text-sm disabled:cursor-not-allowed disabled:opacity-60"
+                  className="btn-blue inline-flex rounded-2xl px-7 py-3.5 text-sm disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {submitStatus === 'loading' ? (
                     <>
@@ -295,7 +295,7 @@ export default function ContactSection({ settings }: { settings?: SiteSettings |
             {contactItems.map((item) => {
               const content = (
                 <div className="premium-panel flex items-center gap-4 rounded-[1.5rem] p-5">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[1rem] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04)),linear-gradient(135deg,rgba(14,165,233,0.16),rgba(139,92,246,0.12),rgba(236,72,153,0.12))] text-white">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[1rem] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04)),linear-gradient(135deg,rgba(59,130,246,0.16),rgba(217,119,6,0.12),rgba(180,83,9,0.12))] text-white">
                     <item.icon className="h-5 w-5" strokeWidth={1.8} />
                   </div>
                   <div>

@@ -7,7 +7,7 @@ export default function BrandWordmark({
     <span
       style={{
         backgroundImage:
-          'linear-gradient(135deg, #d8e7ff 0%, #6fa8ff 28%, #3d7dff 52%, #f2c94c 78%, #f59e0b 100%)',
+          'linear-gradient(135deg, #fef3c7 0%, #fde68a 28%, #60a5fa 52%, #3B82F6 78%, #2563eb 100%)',
         backgroundClip: 'text',
         WebkitBackgroundClip: 'text',
         color: 'transparent',

@@ -40,8 +40,8 @@ const leadColumns: LeadBoardColumn[] = [
     id: 'in_progress',
     title: 'Em analise',
     description: 'Conversas em andamento, escopo e proposta sendo definidos.',
-    color: '#f59e0b',
-    surface: 'linear-gradient(180deg, rgba(245,158,11,0.12), rgba(245,158,11,0.03))',
+    color: '#3B82F6',
+    surface: 'linear-gradient(180deg, rgba(59,130,246,0.12), rgba(59,130,246,0.03))',
   },
   {
     id: 'resolved',
@@ -151,7 +151,7 @@ function LeadCard({ lead }: { lead: ContactSubmission }) {
           className={[
             'rounded-full px-2.5 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.16em]',
             lead.type === 'budget'
-              ? 'bg-amber-400/14 text-amber-300'
+              ? 'bg-blue-400/14 text-blue-500'
               : 'bg-white/[0.07] text-white/52',
           ].join(' ')}
         >
@@ -225,7 +225,7 @@ export default async function AdminDashboard() {
         <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/62">
-              <Sparkles className="h-3.5 w-3.5 text-sky-300" />
+              <Sparkles className="h-3.5 w-3.5 text-blue-500" />
               Centro operacional
             </div>
             <h2 className="mt-5 text-[clamp(2rem,4vw,3.2rem)] font-semibold leading-[0.96] tracking-[-0.05em] text-white">
@@ -248,7 +248,7 @@ export default async function AdminDashboard() {
             </Link>
             <Link
               href="/admin/projetos/novo"
-              className="rounded-[1.25rem] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#0ea5e9_0%,#8b5cf6_54%,#ec4899_100%)] px-4 py-4 text-sm font-medium text-white shadow-[0_18px_40px_rgba(88,28,135,0.22)] transition-all duration-200 hover:scale-[1.02]"
+              className="rounded-[1.25rem] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#3B82F6_0%,#2563eb_54%,#b45309_100%)] px-4 py-4 text-sm font-medium text-white shadow-[0_18px_40px_rgba(88,28,135,0.22)] transition-all duration-200 hover:scale-[1.02]"
             >
               <span className="block text-[0.68rem] uppercase tracking-[0.2em] text-white/66">
                 Ação principal
@@ -401,7 +401,7 @@ export default async function AdminDashboard() {
                     {project.featured && (
                       <>
                         <span className="text-white/18">•</span>
-                        <span className="text-sky-300">Destaque</span>
+                        <span className="text-blue-500">Destaque</span>
                       </>
                     )}
                   </div>
@@ -450,7 +450,7 @@ export default async function AdminDashboard() {
             <div className="grid gap-3 sm:grid-cols-2">
               <Link
                 href="/admin/projetos/novo"
-                className="rounded-[1.25rem] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#0ea5e9_0%,#8b5cf6_54%,#ec4899_100%)] p-4 text-white shadow-[0_18px_40px_rgba(88,28,135,0.2)] transition-all duration-200 hover:scale-[1.02]"
+                className="rounded-[1.25rem] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.04)),linear-gradient(135deg,#3B82F6_0%,#2563eb_54%,#b45309_100%)] p-4 text-white shadow-[0_18px_40px_rgba(88,28,135,0.2)] transition-all duration-200 hover:scale-[1.02]"
               >
                 <FolderKanban className="h-5 w-5" />
                 <p className="mt-4 text-sm font-semibold">Novo projeto</p>

@@ -44,49 +44,36 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        // Ascend custom palette
-        cyan: {
-          50: "#ecfeff",
-          100: "#cffafe",
-          200: "#a5f3fc",
-          300: "#67e8f9",
-          400: "#22d3ee",
-          500: "#06b6d4",
-          600: "#0891b2",
-          700: "#0e7490",
-          800: "#155e75",
-          900: "#164e63",
-          950: "#083344",
-          neon: "#00d4ff",
-        },
-        orange: {
-          neon: "#f59e0b",
-          glow: "#ff6b00",
+        // Premium Dark Gold Custom Palette
+        gold: {
+          50: "#fdf8ec",
+          100: "#fbf0d8",
+          200: "#f6ddaf",
+          300: "#eed07a",
+          400: "#e6ad43",
+          500: "#d98b1b",
+          600: "#c06b12",
+          700: "#a05213",
+          800: "#804316",
+          900: "#693714",
+          950: "#3d1c08",
+          neon: "#3B82F6",
         },
         space: {
-          950: "#030712",
-          900: "#070d1a",
-          800: "#0a1628",
-          700: "#0d1f3c",
+          950: "#050505",
+          900: "#0a0a0a",
+          800: "#171717",
+          700: "#262626",
         },
       },
       backgroundImage: {
-        "space-gradient":
-          "radial-gradient(ellipse at 20% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(6, 182, 212, 0.06) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(245, 158, 11, 0.04) 0%, transparent 50%)",
-        "hero-radial":
-          "radial-gradient(ellipse at center top, rgba(0, 212, 255, 0.15) 0%, transparent 60%)",
-        "card-glow":
-          "linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(6, 182, 212, 0.02) 100%)",
-        "orange-gradient":
-          "linear-gradient(135deg, #f59e0b 0%, #ff6b00 100%)",
-        "cyan-gradient":
-          "linear-gradient(135deg, #00d4ff 0%, #0891b2 100%)",
+        "gold-gradient": "linear-gradient(135deg, #60a5fa 0%, #b45309 100%)",
+        "card-glow": "linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(217, 119, 6, 0.02) 100%)",
       },
       boxShadow: {
-        "cyan-glow": "0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(0, 212, 255, 0.1)",
-        "cyan-sm": "0 0 10px rgba(0, 212, 255, 0.2)",
-        "orange-glow": "0 0 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.1)",
-        "card-hover": "0 8px 32px rgba(0, 212, 255, 0.15), 0 0 0 1px rgba(0, 212, 255, 0.2)",
+        "gold-glow": "0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(59, 130, 246, 0.1)",
+        "gold-sm": "0 0 10px rgba(59, 130, 246, 0.2)",
+        "card-hover": "0 8px 32px rgba(59, 130, 246, 0.15), 0 0 0 1px rgba(59, 130, 246, 0.2)",
       },
       animation: {
         "float": "float 6s ease-in-out infinite",
@@ -104,8 +91,8 @@ const config: Config = {
           "50%": { transform: "translateY(-20px)" },
         },
         glow: {
-          "0%": { boxShadow: "0 0 5px rgba(0, 212, 255, 0.2)" },
-          "100%": { boxShadow: "0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(0, 212, 255, 0.2)" },
+          "0%": { boxShadow: "0 0 5px rgba(59, 130, 246, 0.2)" },
+          "100%": { boxShadow: "0 0 20px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.2)" },
         },
         orbit: {
           "0%": { transform: "rotate(0deg) translateX(60px) rotate(0deg)" },
@@ -125,8 +112,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
-        display: ["var(--font-inter)", "sans-serif"],
+        sans: ["var(--font-sans)", "sans-serif"],
+        display: ["var(--font-sans)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

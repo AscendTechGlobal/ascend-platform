@@ -65,7 +65,7 @@ export default function FAQSection({ faqs }: { faqs: FAQ[] }) {
   if (!faqs || faqs.length === 0) return null
 
   return (
-    <section className="section-shell py-24 sm:py-28">
+    <section className="section-shell bg-[#0F1720] py-24 sm:py-28">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"

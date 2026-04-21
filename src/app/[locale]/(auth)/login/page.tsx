@@ -191,7 +191,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={isLoading}
-            className="btn-orange relative flex h-11 w-full items-center justify-center gap-2 rounded-xl text-sm disabled:cursor-not-allowed disabled:opacity-60"
+            className="btn-blue relative flex h-11 w-full items-center justify-center gap-2 rounded-xl text-sm disabled:cursor-not-allowed disabled:opacity-60"
           >
             {isLoading ? (
               <>

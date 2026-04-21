@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title mt-6">
             {t('title')} <span className="highlight">{t('titleHighlight')}</span>
           </h2>
@@ -78,7 +78,7 @@ export default function WhyChooseUs() {
               variants={cardVariants}
               className="premium-panel rounded-[1.8rem] p-7"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04)),linear-gradient(135deg,rgba(14,165,233,0.16),rgba(139,92,246,0.12),rgba(236,72,153,0.12))] text-white shadow-[0_12px_26px_rgba(4,9,28,0.22)]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.12),rgba(255,255,255,0.04)),linear-gradient(135deg,rgba(59,130,246,0.16),rgba(217,119,6,0.12),rgba(180,83,9,0.12))] text-white shadow-[0_12px_26px_rgba(4,9,28,0.22)]">
                 <Icon className="h-6 w-6" strokeWidth={1.8} />
               </div>
 

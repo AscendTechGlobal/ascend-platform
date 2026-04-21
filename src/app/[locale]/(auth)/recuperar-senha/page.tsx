@@ -191,7 +191,7 @@ export default function RecuperarSenhaPage() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="btn-orange flex h-11 w-full items-center justify-center gap-2 rounded-xl text-sm disabled:cursor-not-allowed disabled:opacity-60"
+                  className="btn-blue flex h-11 w-full items-center justify-center gap-2 rounded-xl text-sm disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {isLoading ? (
                     <>

@@ -75,7 +75,7 @@ export default function ResetPasswordPage() {
               {done ? (
                 <CheckCircle2 className="h-6 w-6 text-emerald-300" />
               ) : (
-                <KeyRound className="h-6 w-6 text-sky-300" />
+                <KeyRound className="h-6 w-6 text-blue-500" />
               )}
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function ResetPasswordPage() {
           <div className="text-center">
             <Link
               href="/login"
-              className="btn-orange inline-flex rounded-xl px-6 py-3 text-sm"
+              className="btn-blue inline-flex rounded-xl px-6 py-3 text-sm"
             >
               {t('backToLogin')}
             </Link>
@@ -147,7 +147,7 @@ export default function ResetPasswordPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="btn-orange flex h-11 w-full items-center justify-center rounded-xl text-sm disabled:cursor-not-allowed disabled:opacity-60"
+                className="btn-blue flex h-11 w-full items-center justify-center rounded-xl text-sm disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isLoading ? t('submitting') : t('submit')}
               </button>

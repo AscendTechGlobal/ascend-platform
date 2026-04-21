@@ -109,7 +109,7 @@ export function Navbar() {
           </div>
 
           <Link href="/login" className="hidden md:block">
-            <span className="btn-orange rounded-2xl px-5 py-2.5 text-sm">{t('login')}</span>
+            <span className="btn-blue rounded-2xl px-5 py-2.5 text-sm">{t('login')}</span>
           </Link>
 
           <div className="md:hidden">
@@ -161,7 +161,7 @@ export function Navbar() {
 
                 <div className="px-4 pb-6">
                   <Link href="/login" onClick={() => setMobileOpen(false)} className="block">
-                    <span className="btn-orange flex w-full rounded-2xl px-5 py-3 text-sm">
+                    <span className="btn-blue flex w-full rounded-2xl px-5 py-3 text-sm">
                       {t('login')}
                     </span>
                   </Link>

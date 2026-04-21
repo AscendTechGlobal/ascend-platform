@@ -22,7 +22,7 @@ const STATUS_CONFIG: Record<
   { label: string; color: string; bg: string }
 > = {
   new: { label: 'Novo', color: '#00d4ff', bg: 'rgba(0,212,255,0.12)' },
-  in_progress: { label: 'Em Andamento', color: '#f59e0b', bg: 'rgba(245,158,11,0.12)' },
+  in_progress: { label: 'Em Andamento', color: '#3B82F6', bg: 'rgba(59,130,246,0.12)' },
   resolved: { label: 'Resolvido', color: '#22c55e', bg: 'rgba(34,197,94,0.12)' },
   spam: { label: 'Spam', color: '#ef4444', bg: 'rgba(239,68,68,0.12)' },
 }
@@ -205,8 +205,8 @@ export default function LeadsClient({ initialLeads }: { initialLeads: ContactSub
                     <span
                       className="px-2 py-0.5 rounded text-[10px] font-semibold"
                       style={{
-                        background: lead.type === 'budget' ? 'rgba(245,158,11,0.12)' : 'rgba(255,255,255,0.07)',
-                        color: lead.type === 'budget' ? '#f59e0b' : 'rgba(255,255,255,0.5)',
+                        background: lead.type === 'budget' ? 'rgba(59,130,246,0.12)' : 'rgba(255,255,255,0.07)',
+                        color: lead.type === 'budget' ? '#3B82F6' : 'rgba(255,255,255,0.5)',
                       }}
                     >
                       {lead.type === 'budget' ? 'Orçamento' : 'Contato'}

@@ -12,7 +12,7 @@ export default function Differentials() {
   const paragraphs = [t('paragraph1'), t('paragraph2'), t('paragraph3')]
 
   return (
-    <section className="section-shell py-24 sm:py-28">
+    <section className="section-shell bg-[linear-gradient(to_bottom,#0B0F14_0%,#0F1720_8%,#0F1720_92%,#0B0F14_100%)]  py-24 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(320px,0.92fr)] lg:items-start lg:px-8">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
@@ -21,7 +21,7 @@ export default function Differentials() {
           transition={{ duration: 0.55 }}
           className="max-w-3xl"
         >
-          <span className="eyebrow">{t('eyebrow')}</span>
+          
           <h2 className="section-title mt-6 max-w-4xl">{t('title')}</h2>
         </motion.div>
 
@@ -38,7 +38,7 @@ export default function Differentials() {
             return (
               <article key={paragraph} className="premium-panel rounded-[1.7rem] p-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[1rem] border border-white/12 bg-white/[0.04] text-sky-200">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[1rem] border border-white/12 bg-white/[0.04] text-blue-400">
                     <Icon className="h-5 w-5" strokeWidth={1.8} />
                   </div>
                   <div>
